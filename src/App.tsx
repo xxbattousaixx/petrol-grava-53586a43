@@ -6,6 +6,7 @@ import Index from './pages/Index';
 import AboutPage from './pages/AboutPage';
 import MissionVisionPage from './pages/MissionVisionPage';
 import ServicePage from './pages/ServicePage';
+import PolicyPage from './pages/PolicyPage';
 import ContactPage from './pages/ContactPage';
 import NotFound from './pages/NotFound';
 import './App.css';
@@ -21,6 +22,7 @@ function App() {
             <Route path="/nosotros" element={<AboutPage />} />
             <Route path="/mision-vision" element={<MissionVisionPage />} />
             <Route path="/servicios/:slug" element={<ServicePage />} />
+            <Route path="/politicas/:slug" element={<PolicyPage />} />
             <Route path="/contacto" element={<ContactPage />} />
           </Route>
           <Route path="*" element={<NotFound />} />

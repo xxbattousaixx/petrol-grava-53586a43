@@ -145,6 +145,78 @@ export const translations = {
     title: { es: "Página No Encontrada", en: "Page Not Found" },
     back: { es: "Volver al inicio", en: "Back to home" },
   },
+  policies: {
+    navLabel: { es: "Políticas de la Empresa", en: "Company Policies" },
+    safety: {
+      title: { es: "Política de Seguridad Industrial e Higiene Ocupacional", en: "Industrial Safety and Occupational Hygiene Policy" },
+      shortTitle: { es: "Seguridad Industrial e Higiene Ocupacional", en: "Industrial Safety & Occupational Hygiene" },
+      slug: "seguridad-industrial-higiene-ocupacional",
+      intro: {
+        es: "PETROL GRAVA SERVICES C.A., una Empresa dedicada al Servicio de Alquiler de Muelle (Varal, Desguace, Mantenimiento y Construcción Naval), Alquiler de Espacios en Tierra ideal para Reparación de Equipos Pesados, Servicios de Fabricación y Soldadura, Tratamientos de superficies para aplicación de Pinturas, Servicios de elaboración de Proyectos Navales, Civiles y Eléctricos, Mantenimiento Menor y Mayor a Unidades lacustres, Reparación de Atracaderos y Barandas, Reparación Menor de Equipos de Superficie y Reparación de Líneas Metálicas.",
+        en: "PETROL GRAVA SERVICES C.A., a company dedicated to Dock Rental Services (Slipway, Scrapping, Maintenance and Naval Construction), Land Space Rental ideal for Heavy Equipment Repair, Fabrication and Welding Services, Surface Treatments for Paint Application, Naval, Civil and Electrical Project Development Services, Minor and Major Maintenance of Lacustrine Units, Dock and Railing Repair, Minor Surface Equipment Repair and Metal Line Repair.",
+      },
+      body: {
+        es: "La Política de Seguridad Industrial e Higiene Ocupacional de PETROL GRAVA SERVICES C.A., está diseñada bajo un Programa de Seguridad y Salud en el Trabajo, específico y adecuado a sus actividades y entorno, orientado hacia la protección de todos sus trabajadores y trabajadoras. Contamos con mecanismos de seguridad y la mejora continua que nos permita garantizar las condiciones de trabajo seguro y saludable. Todos los miembros de la organización están comprometidos a seguir los lineamientos establecidos, entre ellos, cumplir con los procedimientos operacionales, usar los equipos de protección personal, realizar inspecciones a los equipos y herramientas de trabajo y asegurarse de que existan las condiciones mínimas de seguridad para la ejecución de los trabajos, y reportar de inmediato condiciones que generen peligro a los trabajadores, trabajadoras y medio ambiente de manera que se garantice un ambiente seguro, sano y ecológicamente equilibrado, todo con la finalidad de prevenir accidentes, enfermedades ocupacionales y epidemiológicas, que puedan atentar contra la vida de los trabajadores y trabajadoras.",
+        en: "The Industrial Safety and Occupational Hygiene Policy of PETROL GRAVA SERVICES C.A. is designed under a specific Occupational Health and Safety Program suited to its activities and environment, oriented toward the protection of all its workers. We have safety mechanisms and continuous improvement that allow us to guarantee safe and healthy working conditions. All members of the organization are committed to following established guidelines, including complying with operational procedures, using personal protective equipment, inspecting work equipment and tools, ensuring minimum safety conditions exist for work execution, and immediately reporting conditions that pose danger to workers and the environment to guarantee a safe, healthy, and ecologically balanced environment, all with the purpose of preventing accidents, occupational and epidemiological diseases that may threaten workers' lives.",
+      },
+      training: {
+        es: "PETROL GRAVA SERVICES C.A., garantiza la Formación, Educación, y Comunicación de Normas y Procedimientos a sus trabajadores y trabajadoras. De igual forma contempla la utilización del tiempo libre, descanso y turismo social para los trabajadores y trabajadoras de manera que se garantice su desarrollo pleno y su calidad de vida.",
+        en: "PETROL GRAVA SERVICES C.A. guarantees Training, Education, and Communication of Standards and Procedures to its workers. It also contemplates the use of free time, rest, and social tourism for workers to guarantee their full development and quality of life.",
+      },
+      protection: {
+        es: "Promover y proteger a toda mujer trabajadora, niños, niñas, adolescentes y aprendices INCES, personas discapacitadas en el pleno desarrollo de sus capacidades físicas de acuerdo a sus condiciones en concordancia con lo establecido en la ley.",
+        en: "To promote and protect all working women, children, adolescents, INCES apprentices, and disabled persons in the full development of their physical capacities according to their conditions in accordance with the law.",
+      },
+      principles: {
+        es: "Para alcanzar estos principios PETROL GRAVA SERVICES C.A, se apoya en un conjunto de normas, principios políticos, leyes y reglamentos técnicos, sobre los aspectos de Seguridad Industrial e Higiene Ocupacional, que garanticen altos niveles de ejecución y seguridad en las operaciones y control de riesgo asociados a nuestras labores, garantizar los recursos financieros con la finalidad de preservar la integridad física de los miembros de nuestras empresas, los equipos e instalaciones para evitar daños al ambiente y su entorno.",
+        en: "To achieve these principles, PETROL GRAVA SERVICES C.A. relies on a set of standards, political principles, laws, and technical regulations regarding Industrial Safety and Occupational Hygiene, ensuring high levels of execution and safety in operations and risk control associated with our work, guaranteeing financial resources to preserve the physical integrity of our company members, equipment, and facilities to avoid damage to the environment and its surroundings.",
+      },
+      signatories: {
+        manager: "Dra. Maira Rincón",
+        managerTitle: { es: "Gerente General", en: "General Manager" },
+        managerDate: "11/09/2025",
+        delegate: "Rafael Graterol",
+        delegateTitle: { es: "Delegado de Prevención", en: "Prevention Delegate" },
+        delegateDate: "11/09/2025",
+      },
+    },
+    environment: {
+      title: { es: "Política de Ambiente", en: "Environmental Policy" },
+      shortTitle: { es: "Ambiente", en: "Environment" },
+      slug: "ambiente",
+      intro: {
+        es: "PETROL GRAVA SERVICES C.A., una Empresa dedicada al Servicio de Alquiler de Muelle (Varal, Desguace, Mantenimiento y Construcción Naval), Alquiler de Espacios en Tierra ideal para Reparación de Equipos Pesados, Servicios de Fabricación y Soldadura, Tratamientos de superficies para aplicación de Pinturas, Servicios de elaboración de Proyectos Navales, Civiles y Eléctricos, Mantenimiento Menor y Mayor a Unidades lacustres, Reparación de Atracaderos y Barandas, Reparación Menor de Equipos de Superficie y Reparación de Líneas Metálicas.",
+        en: "PETROL GRAVA SERVICES C.A., a company dedicated to Dock Rental Services (Slipway, Scrapping, Maintenance and Naval Construction), Land Space Rental ideal for Heavy Equipment Repair, Fabrication and Welding Services, Surface Treatments for Paint Application, Naval, Civil and Electrical Project Development Services, Minor and Major Maintenance of Lacustrine Units, Dock and Railing Repair, Minor Surface Equipment Repair and Metal Line Repair.",
+      },
+      body: {
+        es: "La Política Ambiental de PETROL GRAVA SERVICES C.A, somos una empresa comprometida con la preservación del medio ambiente, tiene como objetivo alcanzar los máximos estándares en el desempeño Ambiental, como base para lograr un desarrollo sustentable en todas sus operaciones, en relación con sus empleados, la comunidad y las generaciones futuras. Por ello se adopta el compromiso de desarrollar un sistema productivo integrado y eco-eficiente con un alto nivel de desempeño y mejora continua.",
+        en: "The Environmental Policy of PETROL GRAVA SERVICES C.A., a company committed to environmental preservation, aims to achieve the highest standards in Environmental performance as a basis for achieving sustainable development in all its operations, in relation to its employees, the community, and future generations. Therefore, we adopt the commitment to develop an integrated and eco-efficient productive system with a high level of performance and continuous improvement.",
+      },
+      commitments: {
+        es: [
+          "Cumplir con la legislación y regulaciones ambientales aplicables al proceso productivo, y con otros requisitos a los que la empresa se suscriba.",
+          "Prevenir la contaminación utilizando procesos, prácticas, técnicas, materiales, productos o servicios, que permitan reducir los impactos ambientales.",
+          "Utilizar eficientemente los recursos naturales.",
+          "Capacitar y concientizar a su personal en materia ambiental y divulgar a las partes interesadas los logros del Sistema de Gestión Ambiental.",
+        ],
+        en: [
+          "Comply with environmental legislation and regulations applicable to the production process, and with other requirements to which the company subscribes.",
+          "Prevent contamination using processes, practices, techniques, materials, products, or services that reduce environmental impacts.",
+          "Efficiently use natural resources.",
+          "Train and raise awareness among personnel on environmental matters and disseminate the achievements of the Environmental Management System to interested parties.",
+        ],
+      },
+      commitmentsIntro: {
+        es: "Consciente de las implicaciones ecológicas de sus actividades, en todas las unidades de operación estamos comprometidos a:",
+        en: "Aware of the ecological implications of its activities, in all operating units we are committed to:",
+      },
+      signatories: {
+        manager: "Dra. Maira Rincón",
+        managerTitle: { es: "Gerente General", en: "General Manager" },
+        managerDate: "05/02/2026",
+      },
+    },
+  },
   servicePage: {
     back: { es: "Servicios", en: "Services" },
     interested: { es: "¿Interesado en este servicio? Contáctenos para más información.", en: "Interested in this service? Contact us for more information." },
