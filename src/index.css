@@ -73,11 +73,11 @@ html.lenis, html.lenis body {
 
 @layer base {
   * {
-    @apply border-border;
+    @apply border-border m-0 p-0 box-border;
   }
-
+  
   body {
-    @apply bg-background text-foreground font-body antialiased;
+    @apply bg-background text-foreground font-body antialiased m-0 p-0;
   }
 
   h1, h2, h3, h4, h5, h6 {
