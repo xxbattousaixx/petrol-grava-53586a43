@@ -1,0 +1,14 @@
+[build]
+  base = "frontend"
+  publish = "build"
+  command = "yarn install && yarn build"
+
+[build.environment]
+  NODE_VERSION = "18"
+  CI = "false"
+
+# Handle React Router - redirect all routes to index.html
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

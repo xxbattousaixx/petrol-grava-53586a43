@@ -1,0 +1,328 @@
+export const translations = {
+  nav: {
+    home: { es: "Inicio", en: "Home" },
+    about: { es: "Nosotros", en: "About Us" },
+    services: { es: "Servicios", en: "Services" },
+    contact: { es: "Contacto", en: "Contact" },
+    mission: { es: "Misión y Visión", en: "Mission & Vision" },
+  },
+  hero: {
+    title: { es: "PETROL GRAVA", en: "PETROL GRAVA" },
+    titleLine2: { es: "SERVICES C.A", en: "SERVICES C.A" },
+    subtitle: {
+      es: "Más de 27 años ofreciendo servicios de muelle, mantenimientos lacustres y reparación de unidades pesadas",
+      en: "Over 27 years providing dock services, lacustrine maintenance, and heavy unit repair",
+    },
+    cta: { es: "Nuestros Servicios", en: "Our Services" },
+    ctaContact: { es: "Contáctenos", en: "Contact Us" },
+    since: { es: "DESDE 1996", en: "SINCE 1996" },
+    scroll: { es: "DESPLAZAR", en: "SCROLL" },
+  },
+  stats: {
+    years: { es: "Años de Experiencia", en: "Years of Experience" },
+    land: { es: "m² de Terreno", en: "sqm of Land" },
+    dock: { es: "Mts Lineales de Muelle", en: "Linear Meters of Dock" },
+    services: { es: "Servicios Especializados", en: "Specialized Services" },
+  },
+  about: {
+    label: { es: "SOBRE NOSOTROS", en: "ABOUT US" },
+    title: { es: "Confianza y Experiencia", en: "Trust and Experience" },
+    subtitle: { es: "desde 1996", en: "since 1996" },
+    description: {
+      es: "Petrol Grava Services C.A es una empresa constituida en 1996, ubicada en Cabimas, Estado Zulia, Venezuela. Contamos con un área de terreno de 76.402 mts², áreas de oficinas y galpones de 910 mts². Con más de 27 años de experiencia ofreciendo servicios a unidades lacustres con infraestructura propia y varal, con facilidades lacustres y terrestres para la ejecución de las actividades de mantenimiento, reparación y construcción.",
+      en: "Petrol Grava Services C.A is a company established in 1996, located in Cabimas, Zulia State, Venezuela. We have a land area of 76,402 sqm, office and warehouse areas of 910 sqm. With over 27 years of experience providing services to lacustrine units with our own infrastructure and slipway, with lacustrine and land facilities for maintenance, repair, and construction activities.",
+    },
+    areas: {
+      title: { es: "Áreas de Estacionamiento de Unidades", en: "Unit Parking Areas" },
+      north: {
+        es: "Área Muelle Norte: 465 mts lineales con profundidad de 8 a 12 pies",
+        en: "North Dock Area: 465 linear meters with 8 to 12 feet depth",
+      },
+      west: {
+        es: "Áreas Abiertas lado Oeste: 296 mts lineales con profundidad de 4 a 8 pies (Especial para desguaces)",
+        en: "Open Areas West Side: 296 linear meters with 4 to 8 feet depth (Special for scrapping)",
+      },
+      east: {
+        es: "Áreas Abiertas lado Este: mts lineales con profundidad de 2 a 4 pies (Especial para lanchas y gabarras poco calado)",
+        en: "Open Areas East Side: linear meters with 2 to 4 feet depth (Special for boats and shallow draft barges)",
+      },
+    },
+    experience: {
+      title: { es: "Otras Experiencias", en: "Other Experience" },
+      items: {
+        es: [
+          "Servicios Petroleros",
+          "Bombeo de Químicas y Nitrógeno",
+          "Venta de Materiales Petroleros",
+          "Servicios de Filtrados",
+          "Servicios de Pintura, Sandblasting y Soldaduras",
+          "Construcción de Infraestructuras",
+          "Mantenimientos de Tanques Petroleros",
+          "Suministro de Personal",
+        ],
+        en: [
+          "Oil Services",
+          "Chemical and Nitrogen Pumping",
+          "Sale of Oil Materials",
+          "Filtering Services",
+          "Painting, Sandblasting and Welding Services",
+          "Infrastructure Construction",
+          "Oil Tank Maintenance",
+          "Personnel Supply",
+        ],
+      },
+    },
+    rif: "RIF J303361250",
+    readMore: { es: "Leer Más", en: "Read More" },
+  },
+  services: {
+    label: { es: "NUESTROS SERVICIOS", en: "OUR SERVICES" },
+    title: { es: "Soluciones Integrales", en: "Comprehensive Solutions" },
+    subtitle: {
+      es: "para la industria petrolera y lacustre",
+      en: "for the oil and lacustrine industry",
+    },
+    learnMore: { es: "Ver Más", en: "Learn More" },
+    viewAll: { es: "Ver Todos los Servicios", en: "View All Services" },
+  },
+  mission: {
+    label: { es: "MISIÓN", en: "MISSION" },
+    title: { es: "Misión", en: "Mission" },
+    text: {
+      es: "Brindar un servicio confiable a nuestros clientes en operaciones lago y tierra a través de una gerencia técnica con más de 27 años de experiencia, personal calificado en procesos de fabricación, construcción Naval y Civil aplicando normas a través de la aplicación de procedimientos de trabajo que nos permitan la calidad y seguridad del servicio que prestamos y la seguridad de nuestro equipo de trabajo.",
+      en: "To provide reliable service to our clients in lake and land operations through technical management with over 27 years of experience, qualified personnel in manufacturing processes, Naval and Civil construction applying standards through the application of work procedures that allow us the quality and safety of the service we provide and the safety of our team.",
+    },
+  },
+  vision: {
+    label: { es: "VISIÓN", en: "VISION" },
+    title: { es: "Visión", en: "Vision" },
+    text: {
+      es: "Ser la empresa de Servicios de Muelle, Mantenimientos Lacustres y Reparación de Unidades Pesadas más confiable del Zulia por su capacidad, calidad, responsabilidad, confiabilidad y seguridad en el servicio que se ofrece, preservando en todo momento la salud y la integridad de nuestros trabajadores, las buenas relaciones con los clientes, los compromisos con la comunidad y la preservación del medio ambiente.",
+      en: "To be the most reliable Dock Services, Lacustrine Maintenance, and Heavy Unit Repair company in Zulia for its capacity, quality, responsibility, reliability, and safety in the service offered, preserving at all times the health and integrity of our workers, good relationships with clients, commitments to the community, and environmental preservation.",
+    },
+  },
+  contact: {
+    label: { es: "CONTACTO", en: "CONTACT" },
+    title: { es: "Contáctenos", en: "Contact Us" },
+    subtitle: {
+      es: "Estamos para servirle. No dude en comunicarse con nosotros.",
+      en: "We are here to serve you. Don't hesitate to contact us.",
+    },
+    name: { es: "Nombre", en: "Name" },
+    email: { es: "Correo Electrónico", en: "Email" },
+    phone: { es: "Teléfono", en: "Phone" },
+    message: { es: "Mensaje", en: "Message" },
+    send: { es: "Enviar Mensaje", en: "Send Message" },
+    address: { es: "Dirección", en: "Address" },
+    addressText: {
+      es: "Av. Principal La Rosa, al frente de la Iglesia Juan Bautista, Cabimas, Estado Zulia, Venezuela",
+      en: "Av. Principal La Rosa, in front of Juan Bautista Church, Cabimas, Zulia State, Venezuela",
+    },
+    phoneNumbers: "0412-0709379",
+    emails: ["petrolgravagerencia@gmail.com", "petrolgravaadm@gmail.com"],
+    schedule: { es: "Lunes a Viernes: 7:00 AM - 5:00 PM", en: "Monday to Friday: 7:00 AM - 5:00 PM" },
+    success: { es: "¡Mensaje Enviado!", en: "Message Sent!" },
+    successText: { es: "Nos pondremos en contacto con usted pronto.", en: "We will get in touch with you soon." },
+  },
+  cta: {
+    title: { es: "¿Necesita nuestros servicios?", en: "Need our services?" },
+    subtitle: {
+      es: "Contáctenos hoy para discutir cómo podemos ayudarle con sus necesidades de mantenimiento lacustre y petrolero.",
+      en: "Contact us today to discuss how we can help with your lacustrine and oil maintenance needs.",
+    },
+  },
+  footer: {
+    rights: {
+      es: "Todos los derechos reservados.",
+      en: "All rights reserved.",
+    },
+    description: {
+      es: "Más de 27 años de experiencia en servicios lacustres y petroleros.",
+      en: "Over 27 years of experience in lacustrine and oil services.",
+    },
+  },
+  notFound: {
+    title: { es: "Página No Encontrada", en: "Page Not Found" },
+    back: { es: "Volver al inicio", en: "Back to home" },
+  },
+  servicePage: {
+    back: { es: "Servicios", en: "Services" },
+    interested: { es: "¿Interesado en este servicio? Contáctenos para más información.", en: "Interested in this service? Contact us for more information." },
+    prev: { es: "Anterior", en: "Previous" },
+    next: { es: "Siguiente", en: "Next" },
+    notFound: { es: "Servicio no encontrado", en: "Service not found" },
+  },
+};
+
+export const servicesData = [
+  {
+    id: "alquiler-portuario",
+    slug: "alquiler-espacios-portuarios",
+    title: {
+      es: "Alquiler de Espacios Portuarios para Estacionamiento de Unidades Lacustres",
+      en: "Port Space Rental for Lacustrine Unit Parking",
+    },
+    shortDesc: {
+      es: "Espacios portuarios con infraestructura completa para el estacionamiento seguro de unidades lacustres.",
+      en: "Port spaces with complete infrastructure for safe lacustrine unit parking.",
+    },
+    fullDesc: {
+      es: "Ofrecemos el servicio de alquiler de espacios portuarios para el estacionamiento de unidades lacustres con la infraestructura necesaria para garantizar la seguridad y comodidad de las embarcaciones. Nuestro muelle norte cuenta con 465 metros lineales con profundidad de 8 a 12 pies, áreas abiertas del lado oeste de 296 metros lineales con profundidad de 4 a 8 pies ideal para desguaces, y áreas del lado este con profundidad de 2 a 4 pies para lanchas y gabarras de poco calado. Contamos con más de 27 años de experiencia ofreciendo este servicio a la industria petrolera y lacustre del Zulia.",
+      en: "We offer port space rental services for lacustrine unit parking with the necessary infrastructure to guarantee vessel safety and comfort. Our north dock has 465 linear meters with 8 to 12 feet depth, open areas on the west side of 296 linear meters with 4 to 8 feet depth ideal for scrapping, and east side areas with 2 to 4 feet depth for boats and shallow draft barges. We have over 27 years of experience providing this service to the oil and lacustrine industry in Zulia.",
+    },
+    image: "service-alquiler-portuario",
+  },
+  {
+    id: "alquiler-tierra",
+    slug: "alquiler-espacios-tierra",
+    title: {
+      es: "Alquiler de Espacios en Tierra para Reparación de Equipos Pesados",
+      en: "Land Space Rental for Heavy Equipment Repair",
+    },
+    shortDesc: {
+      es: "Espacios amplios en tierra con las facilidades necesarias para la reparación de equipos pesados.",
+      en: "Spacious land areas with necessary facilities for heavy equipment repair.",
+    },
+    fullDesc: {
+      es: "Disponemos de amplios espacios en tierra acondicionados para la reparación de equipos pesados, con un área total de terreno de 76.402 mts² y áreas de galpones de 910 mts². Nuestras instalaciones cuentan con todas las facilidades necesarias para realizar trabajos de reparación, mantenimiento y construcción de equipos de gran envergadura, incluyendo grúas, sistemas de electricidad industrial y áreas de soldadura especializadas.",
+      en: "We have spacious land areas equipped for heavy equipment repair, with a total land area of 76,402 sqm and warehouse areas of 910 sqm. Our facilities have all the necessary amenities to carry out repair, maintenance, and construction work on large-scale equipment, including cranes, industrial electrical systems, and specialized welding areas.",
+    },
+    image: "service-alquiler-tierra",
+  },
+  {
+    id: "izamientos",
+    slug: "equipos-izamientos",
+    title: {
+      es: "Equipos de Izamientos",
+      en: "Lifting Equipment",
+    },
+    shortDesc: {
+      es: "Equipos de izamiento de alta capacidad para operaciones en muelle y tierra.",
+      en: "High-capacity lifting equipment for dock and land operations.",
+    },
+    fullDesc: {
+      es: "Contamos con equipos de izamiento de alta capacidad para la ejecución de maniobras seguras en operaciones de muelle y tierra. Nuestros equipos incluyen grúas de diversas capacidades diseñadas para el levantamiento y transporte de cargas pesadas en la industria petrolera y lacustre. Personal calificado y certificado opera nuestros equipos garantizando la seguridad y eficiencia en cada operación de izamiento.",
+      en: "We have high-capacity lifting equipment for executing safe maneuvers in dock and land operations. Our equipment includes cranes of various capacities designed for lifting and transporting heavy loads in the oil and lacustrine industry. Qualified and certified personnel operate our equipment ensuring safety and efficiency in every lifting operation.",
+    },
+    image: "service-izamientos",
+  },
+  {
+    id: "transporte",
+    slug: "transporte-terrestre",
+    title: {
+      es: "Transporte Terrestre",
+      en: "Land Transportation",
+    },
+    shortDesc: {
+      es: "Servicio de transporte terrestre especializado para equipos y cargas pesadas.",
+      en: "Specialized land transportation service for heavy equipment and loads.",
+    },
+    fullDesc: {
+      es: "Ofrecemos servicios de transporte terrestre especializado para el traslado de equipos pesados y cargas sobredimensionadas. Contamos con una flota de vehículos de carga pesada y plataformas especiales que nos permiten movilizar equipos de gran envergadura de manera segura y eficiente. Nuestro equipo de logística se encarga de la planificación y ejecución de cada transporte, cumpliendo con todas las normativas de seguridad y tránsito.",
+      en: "We offer specialized land transportation services for moving heavy equipment and oversized loads. We have a fleet of heavy cargo vehicles and special platforms that allow us to mobilize large-scale equipment safely and efficiently. Our logistics team handles the planning and execution of each transport, complying with all safety and traffic regulations.",
+    },
+    image: "service-transporte",
+  },
+  {
+    id: "sandblasting",
+    slug: "sandblasting-waterblasting",
+    title: {
+      es: "Aplicación de Sandblasting y Waterblasting",
+      en: "Sandblasting and Waterblasting Application",
+    },
+    shortDesc: {
+      es: "Servicios profesionales de sandblasting y waterblasting para limpieza y preparación de superficies.",
+      en: "Professional sandblasting and waterblasting services for surface cleaning and preparation.",
+    },
+    fullDesc: {
+      es: "Brindamos servicios profesionales de sandblasting y waterblasting para la limpieza y preparación de superficies metálicas en unidades lacustres y equipos industriales. Nuestro servicio incluye la remoción de óxido, pintura deteriorada y contaminantes, preparando la superficie para la aplicación de recubrimientos protectores. Utilizamos equipos de última generación y arena de alta calidad para garantizar un acabado óptimo que cumpla con las especificaciones técnicas requeridas.",
+      en: "We provide professional sandblasting and waterblasting services for cleaning and preparing metal surfaces on lacustrine units and industrial equipment. Our service includes removal of rust, deteriorated paint, and contaminants, preparing the surface for application of protective coatings. We use state-of-the-art equipment and high-quality sand to ensure an optimal finish that meets required technical specifications.",
+    },
+    image: "service-sandblasting",
+  },
+  {
+    id: "limpieza-presion",
+    slug: "limpieza-agua-presion",
+    title: {
+      es: "Limpieza con Agua a Presión",
+      en: "Pressure Water Cleaning",
+    },
+    shortDesc: {
+      es: "Limpieza industrial con agua a alta presión para embarcaciones y equipos.",
+      en: "Industrial high-pressure water cleaning for vessels and equipment.",
+    },
+    fullDesc: {
+      es: "Realizamos servicios de limpieza industrial con agua a alta presión para embarcaciones, tanques y equipos industriales. Nuestro servicio garantiza la remoción efectiva de incrustaciones, residuos marinos, óxido y otros contaminantes sin dañar la superficie base. Contamos con equipos de hidrolavado de alta presión operados por personal capacitado que asegura resultados de calidad cumpliendo con todas las normas de seguridad industrial.",
+      en: "We perform industrial high-pressure water cleaning services for vessels, tanks, and industrial equipment. Our service guarantees effective removal of encrustations, marine residue, rust, and other contaminants without damaging the base surface. We have high-pressure hydro-washing equipment operated by trained personnel that ensures quality results complying with all industrial safety standards.",
+    },
+    image: "service-limpieza",
+  },
+  {
+    id: "reacondicionamiento",
+    slug: "reacondicionamiento-tanques",
+    title: {
+      es: "Reacondicionamiento Mayor de Tanque",
+      en: "Major Tank Reconditioning",
+    },
+    shortDesc: {
+      es: "Servicio de reacondicionamiento integral para tanques de almacenamiento.",
+      en: "Comprehensive reconditioning service for storage tanks.",
+    },
+    fullDesc: {
+      es: "Ejecutamos proyectos de reacondicionamiento mayor de tanques de almacenamiento petrolero, incluyendo la inspección, limpieza, reparación estructural, reemplazo de aceros, aplicación de recubrimientos y pruebas de hermeticidad. Nuestro equipo técnico cuenta con amplia experiencia en la ejecución de estos trabajos siguiendo estándares API y normas nacionales e internacionales aplicables, garantizando la integridad y vida útil del tanque.",
+      en: "We execute major reconditioning projects for oil storage tanks, including inspection, cleaning, structural repair, steel replacement, coating application, and leak testing. Our technical team has extensive experience in executing these works following API standards and applicable national and international regulations, guaranteeing the integrity and useful life of the tank.",
+    },
+    image: "service-reacondicionamiento",
+  },
+  {
+    id: "lineas-flujo",
+    slug: "mantenimiento-lineas-flujo",
+    title: {
+      es: "Mantenimiento Área de Líneas de Flujo",
+      en: "Flow Line Area Maintenance",
+    },
+    shortDesc: {
+      es: "Mantenimiento especializado en áreas de líneas de flujo petroleras.",
+      en: "Specialized maintenance in oil flow line areas.",
+    },
+    fullDesc: {
+      es: "Ofrecemos servicios de mantenimiento especializado en áreas de líneas de flujo para la industria petrolera. Nuestro servicio incluye inspección, reparación, reemplazo de tramos deteriorados, aplicación de protección anticorrosiva y pruebas hidrostáticas. Contamos con personal técnico calificado y equipos especializados que garantizan la integridad operacional de las líneas de flujo, minimizando los tiempos de parada y maximizando la seguridad operativa.",
+      en: "We offer specialized maintenance services in flow line areas for the oil industry. Our service includes inspection, repair, replacement of deteriorated sections, anti-corrosive protection application, and hydrostatic testing. We have qualified technical personnel and specialized equipment that guarantee the operational integrity of flow lines, minimizing downtime and maximizing operational safety.",
+    },
+    image: "service-lineas-flujo",
+  },
+  {
+    id: "diques",
+    slug: "diques-unidades-lacustres",
+    title: {
+      es: "Diques a Unidades Lacustres en Varal",
+      en: "Lacustrine Unit Dry Docking",
+    },
+    shortDesc: {
+      es: "Servicio de varado y dique seco para mantenimiento de unidades lacustres.",
+      en: "Grounding and dry dock service for lacustrine unit maintenance.",
+    },
+    fullDesc: {
+      es: "Prestamos el servicio de diques a unidades lacustres en varal, donde las embarcaciones son llevadas a tierra firme para realizar trabajos de mantenimiento, reparación y construcción en el casco y fondo de la unidad. Nuestro varal cuenta con la infraestructura necesaria para recibir embarcaciones de diferentes tamaños, garantizando un proceso seguro de varado y botadura. Los trabajos incluyen inspección naval, reemplazo de aceros, pintura y aplicación de sistemas anticorrosivos.",
+      en: "We provide dry docking services for lacustrine units on slipway, where vessels are brought to dry land to carry out maintenance, repair, and construction work on the hull and bottom of the unit. Our slipway has the necessary infrastructure to receive vessels of different sizes, guaranteeing a safe grounding and launching process. Works include naval inspection, steel replacement, painting, and anti-corrosive system application.",
+    },
+    image: "service-diques",
+  },
+  {
+    id: "aceros-mantenimiento",
+    slug: "reemplazo-aceros-mantenimientos-mayores",
+    title: {
+      es: "Reemplazo de Aceros Bajo el Agua y Mantenimientos Mayores",
+      en: "Underwater Steel Replacement and Major Maintenance",
+    },
+    shortDesc: {
+      es: "Servicios de reemplazo de aceros bajo el agua con buzos certificados y mantenimientos mayores integrales.",
+      en: "Underwater steel replacement services with certified divers and comprehensive major maintenance.",
+    },
+    fullDesc: {
+      es: "Realizamos servicios de reemplazo de aceros bajo el agua con buzos certificados y equipos especializados para trabajos subacuáticos. Este servicio es esencial para la reparación y mantenimiento de embarcaciones, plataformas y estructuras sumergidas sin necesidad de sacar la unidad del agua. Nuestro equipo de buzos comerciales está certificado y cuenta con la experiencia necesaria para ejecutar soldaduras subacuáticas, corte de aceros, inspecciones y reparaciones estructurales bajo el agua. Adicionalmente, ejecutamos proyectos de mantenimientos mayores a unidades lacustres y equipos industriales.",
+      en: "We perform underwater steel replacement services with certified divers and specialized equipment for underwater work. This service is essential for repairing and maintaining vessels, platforms, and submerged structures without the need to remove the unit from the water. Our team of commercial divers is certified and has the necessary experience to execute underwater welding, steel cutting, inspections, and structural repairs underwater. Additionally, we execute major maintenance projects for lacustrine units and industrial equipment.",
+    },
+    image: "service-aceros",
+  },
+];

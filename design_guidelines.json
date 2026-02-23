@@ -1,0 +1,171 @@
+{
+  "project_name": "Petrol Grava Services - Immersive Industrial Redesign",
+  "app_type": "marketing_site",
+  "design_philosophy": {
+    "archetype": "The Performance Pro",
+    "vibe": "Industrial Luxury, Heavy Engineering, Cinematic Depth",
+    "core_principles": [
+      "Motion is Material: Animations should feel heavy and mechanical, not floaty.",
+      "Density with Breath: High information density in grids, but massive whitespace around sections.",
+      "Immersive Navigation: Floating glass headers, smooth scrolling (Lenis), and parallax backgrounds."
+    ]
+  },
+  "typography": {
+    "font_family": {
+      "heading": "Barlow Condensed, sans-serif",
+      "body": "Manrope, sans-serif",
+      "accent": "JetBrains Mono, monospace"
+    },
+    "imports": [
+      "https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800&family=Manrope:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+    ],
+    "usage": {
+      "h1": "font-heading font-bold text-6xl md:text-8xl tracking-tight uppercase leading-[0.9]",
+      "h2": "font-heading font-bold text-5xl md:text-6xl tracking-tight uppercase",
+      "h3": "font-heading font-semibold text-3xl md:text-4xl tracking-normal uppercase",
+      "body": "font-body text-base md:text-lg text-muted-foreground leading-relaxed",
+      "label": "font-accent text-xs uppercase tracking-widest text-primary/80"
+    }
+  },
+  "colors": {
+    "palette": {
+      "primary": {
+        "DEFAULT": "#007038",
+        "foreground": "#FFFFFF",
+        "50": "#E0F5E9",
+        "100": "#B3E6C7",
+        "200": "#80D2A2",
+        "300": "#4DBE7D",
+        "400": "#26AE62",
+        "500": "#009E47",
+        "600": "#007F39",
+        "700": "#007038",
+        "800": "#005229",
+        "900": "#00331A"
+      },
+      "secondary": {
+        "DEFAULT": "#E0A526",
+        "foreground": "#000000",
+        "50": "#FDF8E6",
+        "100": "#F9ECC0",
+        "200": "#F4DE96",
+        "300": "#EFD06C",
+        "400": "#EAC24D",
+        "500": "#E5B42E",
+        "600": "#E0A526",
+        "700": "#B3841E",
+        "800": "#866317",
+        "900": "#59420F"
+      },
+      "background": "#F5F5F4",
+      "surface": "#FFFFFF",
+      "dark_surface": "#0F172A",
+      "muted": "#E7E5E4"
+    },
+    "gradients": {
+      "hero_overlay": "linear-gradient(to bottom, rgba(0, 35, 18, 0.4), rgba(0, 35, 18, 0.8))",
+      "gold_glow": "radial-gradient(circle at center, rgba(224, 165, 38, 0.4) 0%, rgba(224, 165, 38, 0) 70%)"
+    },
+    "tailwind_config_extension": {
+      "colors": {
+        "petrol-green": {
+            "DEFAULT": "#007038",
+            "foreground": "#ffffff"
+        },
+        "petrol-gold": {
+            "DEFAULT": "#E0A526",
+            "foreground": "#000000"
+        },
+        "industrial-white": "#F5F5F4"
+      },
+      "fontFamily": {
+        "heading": ["Barlow Condensed", "sans-serif"],
+        "body": ["Manrope", "sans-serif"],
+        "mono": ["JetBrains Mono", "monospace"]
+      }
+    }
+  },
+  "layout": {
+    "spacing": {
+      "section_padding": "py-24 md:py-32",
+      "container_padding": "px-6 md:px-12",
+      "element_gap": "gap-8 md:gap-12"
+    },
+    "grid_systems": {
+      "bento_services": "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 auto-rows-[400px]",
+      "stats_row": "grid grid-cols-2 md:grid-cols-4 gap-8 border-y border-primary/10 py-12"
+    },
+    "z_index": {
+      "cursor": 100,
+      "nav": 50,
+      "modal": 60,
+      "content": 10,
+      "background": 0
+    }
+  },
+  "components": {
+    "buttons": {
+      "primary": "bg-petrol-green text-white px-8 py-4 rounded-none uppercase font-heading font-bold tracking-widest hover:bg-petrol-green/90 transition-all duration-300 relative overflow-hidden group",
+      "secondary": "bg-transparent border border-petrol-green text-petrol-green px-8 py-4 rounded-none uppercase font-heading font-bold tracking-widest hover:bg-petrol-green hover:text-white transition-all duration-300",
+      "ghost": "text-petrol-green uppercase font-heading font-bold tracking-widest hover:text-petrol-gold transition-colors duration-200"
+    },
+    "cards": {
+      "service_card": "group relative h-full w-full overflow-hidden bg-white border border-stone-200 hover:border-petrol-gold/50 transition-all duration-500",
+      "feature_card": "p-8 bg-stone-100 border-l-4 border-petrol-green hover:bg-white transition-all duration-300 shadow-sm hover:shadow-xl"
+    },
+    "navigation": {
+      "header": "fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-stone-200/50 h-20 flex items-center transition-all duration-300",
+      "link": "font-heading font-semibold uppercase tracking-wider text-stone-800 hover:text-petrol-green transition-colors relative after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[2px] after:bg-petrol-gold after:transition-all after:duration-300 hover:after:w-full"
+    }
+  },
+  "motion": {
+    "libraries": [
+      "framer-motion",
+      "lenis",
+      "react-tilt"
+    ],
+    "settings": {
+      "transition_heavy": { "duration": 0.8, "ease": [0.22, 1, 0.36, 1] },
+      "transition_spring": { "type": "spring", "stiffness": 100, "damping": 20 }
+    },
+    "specific_animations": {
+      "ken_burns": "scale-100 animate-[ken-burns_20s_infinite_alternate]",
+      "text_reveal": "overflow-hidden",
+      "parallax_scroll": "useTransform(scrollYProgress, [0, 1], ['0%', '50%'])"
+    }
+  },
+  "assets": {
+    "images": {
+      "hero_carousel": [
+        "https://images.unsplash.com/photo-1675344929048-a14b95fd52bc?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "https://images.unsplash.com/photo-1720036236694-d0a231c52563?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "https://images.unsplash.com/photo-1675344930127-c76d5b090cae?crop=entropy&cs=srgb&fm=jpg&q=85"
+      ],
+      "services": {
+        "maritime": "https://images.unsplash.com/photo-1716731895935-b956be14d3fb?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "welding": "https://images.unsplash.com/photo-1740072161824-cc5e9517290c?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "industrial": "https://images.unsplash.com/photo-1569950044190-6d22b2693955?crop=entropy&cs=srgb&fm=jpg&q=85"
+      },
+      "textures": {
+        "grain": "url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0IiBoZWlnaHQ9IjQiPgo8cmVjdCB3aWR0aD0iNCIgaGVpZ2h0PSI0IiBmaWxsPSIjZmZmIi8+CjxyZWN0IHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9IiNjY2MiLz4KPC9zdmc+')"
+      }
+    },
+    "icons": "lucide-react"
+  },
+  "instructions_to_main_agent": [
+    "1. SETUP: Install 'lenis' for smooth scrolling immediately. This is non-negotiable for the 'premium' feel.",
+    "2. FONT: Add the Google Fonts import to index.css or index.html immediately.",
+    "3. TAILWIND: Update tailwind.config.js with the 'colors' and 'fontFamily' extensions provided above.",
+    "4. LAYOUT: Build the Hero section first. It must be 100vh, using the images in a carousel with a slow zoom (Ken Burns) effect.",
+    "5. COMPONENT: Create a 'ServiceCard' component that uses 'react-tilt' or framer-motion for a 3D hover effect.",
+    "6. GLOBAL: Add a subtle noise texture overlay to the entire body using 'pointer-events-none fixed inset-0 z-[9999] opacity-[0.03] mix-blend-overlay'.",
+    "7. BILINGUAL: Prepare the structure for i18n, but for now, just hardcode Spanish text with English placeholders or toggles if requested.",
+    "8. SHADCN: Use Shadcn components for complex interactions (Forms, Dialogs) but strip their default styling to match the 'Industrial Luxury' aesthetic."
+  ],
+  "UNIVERSAL_GUIDELINES": [
+    "Do not use gradients for the primary background. Use the 'industrial-white' solid color.",
+    "Never center text in the Hero section unless it is a massive headline. Left-align for strength.",
+    "Use uppercase tracking-widest labels above headlines (e.g., 'OUR SERVICES' above 'MARINE LOGISTICS').",
+    "Ensure all images have a dark overlay (bg-black/40) when text is placed on top of them."
+  ]
+}

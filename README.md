@@ -1,73 +1,47 @@
-# Welcome to your Lovable project
+# Petrol Grava Services - Immersive Website
 
-## Project info
+A modern, immersive website for Petrol Grava Services C.A, featuring:
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+- **Ken Burns Cinematic Hero Carousel** - Auto-changing images with zoom animations
+- **3D Tilt Service Cards** - Interactive hover effects
+- **Glass-morphism Navigation** - Transparent to frosted blur on scroll
+- **Smooth Scrolling** - Lenis library for premium feel
+- **Bilingual Support** - Spanish/English toggle
+- **Responsive Design** - Mobile-first approach
 
-## How can I edit this code?
+## Tech Stack
 
-There are several ways of editing your application.
+- React 18
+- React Router DOM
+- Tailwind CSS
+- Framer Motion
+- Lenis (smooth scrolling)
+- Lucide React (icons)
 
-**Use Lovable**
+## Deploy to Netlify
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+1. Push this repo to GitHub
+2. Connect your GitHub repo to Netlify
+3. Netlify will auto-detect the `netlify.toml` config
+4. Build settings are pre-configured:
+   - Base directory: `frontend`
+   - Build command: `yarn install && yarn build`
+   - Publish directory: `build`
 
-Changes made via Lovable will be committed automatically to this repo.
+## Local Development
 
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+```bash
+cd frontend
+yarn install
+yarn start
 ```
 
-**Edit a file directly in GitHub**
+## Color Scheme
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+- Primary Green: `#007038`
+- Secondary Gold: `#E0A526`
+- Background: `#F5F5F4`
 
-**Use GitHub Codespaces**
+## License
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+© 2026 Petrol Grava Services C.A. All rights reserved.

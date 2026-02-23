@@ -1,0 +1,21 @@
+{
+  "name": "Petrol Grava Services C.A",
+  "short_name": "Petrol Grava",
+  "description": "Más de 27 años ofreciendo servicios de muelle, mantenimientos lacustres y reparación de unidades pesadas.",
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#007038",
+  "background_color": "#F5F5F4",
+  "icons": [
+    {
+      "src": "logo.jpg",
+      "sizes": "192x192",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "logo.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg"
+    }
+  ]
+}

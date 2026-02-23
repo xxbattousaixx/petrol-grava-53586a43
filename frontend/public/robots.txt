@@ -1,0 +1,15 @@
+# robots.txt for Petrol Grava Services C.A
+# https://petrolgrava.com/
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://petrolgrava.com/sitemap.xml
+
+# Crawl-delay (optional, be friendly to servers)
+Crawl-delay: 1
+
+# Disallow admin or private paths (none currently)
+# Disallow: /admin/
+# Disallow: /private/
