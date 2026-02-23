@@ -6,10 +6,16 @@ import { translations, servicesData } from '@/i18n/translations';
 import { Menu, X, ChevronDown, Globe } from 'lucide-react';
 import logoHeader from '@/assets/logo-header.jpg';
 
+const policiesData = [
+  { slug: translations.policies.safety.slug, title: translations.policies.safety.shortTitle },
+  { slug: translations.policies.environment.slug, title: translations.policies.environment.shortTitle },
+];
+
 const Navbar = () => {
   const { lang, toggleLanguage, t } = useLanguage();
   const [mobileOpen, setMobileOpen] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
+  const [policiesOpen, setPoliciesOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const location = useLocation();
 
@@ -50,9 +56,31 @@ const Navbar = () => {
               {servicesOpen && (
                 <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: 10 }} transition={{ duration: 0.2 }} className="absolute left-0 top-full pt-2 w-80">
                   <div className="glass rounded-lg shadow-2xl border border-white/20 overflow-hidden max-h-[70vh] overflow-y-auto">
-                    {servicesData.map((s, i) => (
+                    {servicesData.map((s) => (
                       <Link key={s.id} to={`/servicios/${s.slug}`} className="block px-4 py-3 text-sm text-foreground hover:bg-petrol-green hover:text-white transition-all duration-200 border-b border-border/50 last:border-b-0" onClick={() => setServicesOpen(false)}>
                         {t(s.title)}
+                      </Link>
+                    ))}
+                  </div>
+                </motion.div>
+              )}
+            </AnimatePresence>
+          </div>
+
+          {/* Policies Dropdown */}
+          <div className="relative" onMouseEnter={() => setPoliciesOpen(true)} onMouseLeave={() => setPoliciesOpen(false)}>
+            <button className={`flex items-center gap-1 px-4 py-2 font-heading font-semibold uppercase tracking-wider text-sm transition-all relative ${scrolled ? 'text-foreground hover:text-petrol-green' : 'text-white/90 hover:text-white'}`}>
+              {t(translations.policies.navLabel)}
+              <ChevronDown className={`h-4 w-4 transition-transform ${policiesOpen ? 'rotate-180' : ''}`} />
+              <span className={`absolute bottom-0 left-4 right-4 h-0.5 bg-petrol-gold transform origin-left transition-transform duration-300 ${policiesOpen ? 'scale-x-100' : 'scale-x-0'}`} />
+            </button>
+            <AnimatePresence>
+              {policiesOpen && (
+                <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: 10 }} transition={{ duration: 0.2 }} className="absolute left-0 top-full pt-2 w-80">
+                  <div className="glass rounded-lg shadow-2xl border border-white/20 overflow-hidden">
+                    {policiesData.map((p) => (
+                      <Link key={p.slug} to={`/politicas/${p.slug}`} className="block px-4 py-3 text-sm text-foreground hover:bg-petrol-green hover:text-white transition-all duration-200 border-b border-border/50 last:border-b-0" onClick={() => setPoliciesOpen(false)}>
+                        {t(p.title)}
                       </Link>
                     ))}
                   </div>
@@ -94,6 +122,12 @@ const Navbar = () => {
               </div>
               {servicesData.map((s) => (
                 <MobileLink key={s.id} to={`/servicios/${s.slug}`} label={t(s.title)} onClick={() => setMobileOpen(false)} indent />
+              ))}
+              <div className="px-4 py-2 mt-2">
+                <span className="text-petrol-gold text-xs font-heading font-bold uppercase tracking-widest">{t(translations.policies.navLabel)}</span>
+              </div>
+              {policiesData.map((p) => (
+                <MobileLink key={p.slug} to={`/politicas/${p.slug}`} label={t(p.title)} onClick={() => setMobileOpen(false)} indent />
               ))}
               <MobileLink to="/mision-vision" label={t(translations.nav.mission)} onClick={() => setMobileOpen(false)} />
               <MobileLink to="/contacto" label={t(translations.nav.contact)} onClick={() => setMobileOpen(false)} />
