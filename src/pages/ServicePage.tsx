@@ -1,14 +1,35 @@
+import { useState, useCallback, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { useLanguage } from '@/i18n/LanguageContext';
 import { servicesData, translations } from '@/i18n/translations';
-import { ArrowLeft, ArrowRight } from 'lucide-react';
+import { ArrowLeft, ArrowRight, ChevronLeft, ChevronRight } from 'lucide-react';
 import { serviceImages } from '@/lib/serviceImages';
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  type CarouselApi,
+} from '@/components/ui/carousel';
 
 const ServicePage = () => {
   const { slug } = useParams();
   const { t } = useLanguage();
   const service = servicesData.find((s) => s.slug === slug);
+  const [carouselApi, setCarouselApi] = useState<CarouselApi>();
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  const onSelect = useCallback(() => {
+    if (!carouselApi) return;
+    setCurrentSlide(carouselApi.selectedScrollSnap());
+  }, [carouselApi]);
+
+  useEffect(() => {
+    if (!carouselApi) return;
+    onSelect();
+    carouselApi.on('select', onSelect);
+    return () => { carouselApi.off('select', onSelect); };
+  }, [carouselApi, onSelect]);
 
   if (!service) {
     return (
@@ -26,6 +47,7 @@ const ServicePage = () => {
   const nextService = currentIndex < servicesData.length - 1 ? servicesData[currentIndex + 1] : null;
   const mainImage = serviceImages[service.image] || '';
   const extraImages = Object.entries(serviceImages).filter(([key]) => key.startsWith(service.image) && key !== service.image).map(([, val]) => val);
+  const allImages = [mainImage, ...extraImages].filter(Boolean);
 
   return (
     <>
@@ -48,11 +70,55 @@ const ServicePage = () => {
               <div className="w-20 h-1 bg-petrol-gold mb-8" />
               <p className="text-muted-foreground leading-relaxed text-lg mb-12 font-body whitespace-pre-line">{t(service.fullDesc)}</p>
             </motion.div>
-            {extraImages.length > 0 && (
-              <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.5, duration: 0.6 }} className="grid grid-cols-2 gap-6 mb-12">
-                {extraImages.map((img, i) => (<motion.img key={i} initial={{ opacity: 0, scale: 0.95 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} transition={{ delay: i * 0.1, duration: 0.5 }} src={img} alt={`${t(service.title)} ${i + 2}`} className="w-full h-52 object-cover shadow-lg" />))}
+
+            {/* Image Carousel */}
+            {allImages.length > 0 && (
+              <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.5, duration: 0.6 }} className="mb-12">
+                <Carousel setApi={setCarouselApi} opts={{ loop: true }} className="relative">
+                  <CarouselContent>
+                    {allImages.map((img, i) => (
+                      <CarouselItem key={i}>
+                        <div className="overflow-hidden">
+                          <img
+                            src={img}
+                            alt={`${t(service.title)} ${i + 1}`}
+                            className="w-full h-[300px] md:h-[450px] object-cover"
+                          />
+                        </div>
+                      </CarouselItem>
+                    ))}
+                  </CarouselContent>
+                  {allImages.length > 1 && (
+                    <>
+                      <button
+                        onClick={() => carouselApi?.scrollPrev()}
+                        className="absolute left-3 top-1/2 -translate-y-1/2 bg-petrol-green-900/70 hover:bg-petrol-green-900/90 text-white w-10 h-10 rounded-full flex items-center justify-center transition-colors"
+                      >
+                        <ChevronLeft className="h-5 w-5" />
+                      </button>
+                      <button
+                        onClick={() => carouselApi?.scrollNext()}
+                        className="absolute right-3 top-1/2 -translate-y-1/2 bg-petrol-green-900/70 hover:bg-petrol-green-900/90 text-white w-10 h-10 rounded-full flex items-center justify-center transition-colors"
+                      >
+                        <ChevronRight className="h-5 w-5" />
+                      </button>
+                      <div className="flex justify-center gap-2 mt-4">
+                        {allImages.map((_, i) => (
+                          <button
+                            key={i}
+                            onClick={() => carouselApi?.scrollTo(i)}
+                            className={`w-2.5 h-2.5 rounded-full transition-colors ${
+                              i === currentSlide ? 'bg-petrol-gold' : 'bg-stone-300 hover:bg-stone-400'
+                            }`}
+                          />
+                        ))}
+                      </div>
+                    </>
+                  )}
+                </Carousel>
               </motion.div>
             )}
+
             <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }} className="bg-petrol-green-900 p-8 md:p-12 text-center">
               <p className="text-white/80 mb-6 font-body text-lg">{t(translations.servicePage.interested)}</p>
               <Link to="/contacto" className="group inline-flex items-center gap-3 bg-petrol-gold text-petrol-green-900 px-8 py-4 font-heading font-bold uppercase tracking-widest text-sm hover:bg-petrol-gold-500 transition-all duration-300">{t(translations.nav.contact)}<ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" /></Link>
