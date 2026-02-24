@@ -4,7 +4,7 @@ import { MapPin, ChevronRight, ArrowRight } from 'lucide-react';
 import { useLanguage } from '@/i18n/LanguageContext';
 import { translations } from '@/i18n/translations';
 
-const ANIMATION_STATES = ['idle', 'space', 'zoom1', 'zoom2', 'zoom3', 'dock', 'complete'];
+const ANIMATION_STATES = ['idle', 'space', 'zoom1', 'zoom2', 'zoom3', 'zoom4', 'dock', 'complete'];
 
 interface SatelliteHeroProps {
   latitude?: number;
@@ -40,10 +40,14 @@ const SatelliteHero = ({ latitude = 10.4123, longitude = -71.4368, locationName 
       await new Promise(r => setTimeout(r, 1800));
       await maracaiboLoaded;
       setAnimationState('zoom2');
+      const dockAerialLoaded = loadImage('/assets/satellite-dock-aerial.png');
+      await new Promise(r => setTimeout(r, 1800));
+      await dockAerialLoaded;
+      setAnimationState('zoom3');
       const dockWideLoaded = loadImage('/assets/dock-wide-aerial.jpg');
       await new Promise(r => setTimeout(r, 1800));
       await dockWideLoaded;
-      setAnimationState('zoom3');
+      setAnimationState('zoom4');
       const dockFinalLoaded = loadImage('/assets/dock-aerial-view.jpg');
       await new Promise(r => setTimeout(r, 1500));
       await dockFinalLoaded;
@@ -71,7 +75,8 @@ const SatelliteHero = ({ latitude = 10.4123, longitude = -71.4368, locationName 
       case 'idle': case 'space': return '/assets/satellite-earth-space.jpg';
       case 'zoom1': return '/assets/satellite-venezuela-region.jpg';
       case 'zoom2': return '/assets/satellite-lake-maracaibo.jpg';
-      case 'zoom3': return '/assets/dock-wide-aerial.jpg';
+      case 'zoom3': return '/assets/satellite-dock-aerial.png';
+      case 'zoom4': return '/assets/dock-wide-aerial.jpg';
       case 'dock': case 'complete': return '/assets/dock-aerial-view.jpg';
       default: return '/assets/satellite-earth-space.jpg';
     }
@@ -83,7 +88,8 @@ const SatelliteHero = ({ latitude = 10.4123, longitude = -71.4368, locationName 
       case 'space': return 1.1;
       case 'zoom1': return 1.25;
       case 'zoom2': return 1.15;
-      case 'zoom3': return 1.1;
+      case 'zoom3': return 1.12;
+      case 'zoom4': return 1.1;
       case 'dock': case 'complete': return 1.05;
       default: return 1;
     }
@@ -93,7 +99,8 @@ const SatelliteHero = ({ latitude = 10.4123, longitude = -71.4368, locationName 
     switch (state) {
       case 'idle': return 0.4;
       case 'space': case 'zoom1': case 'zoom2': return 0.3;
-      case 'zoom3': return 0.45;
+      case 'zoom3': return 0.35;
+      case 'zoom4': return 0.45;
       case 'dock': case 'complete': return 0.55;
       default: return 0.3;
     }
@@ -101,10 +108,11 @@ const SatelliteHero = ({ latitude = 10.4123, longitude = -71.4368, locationName 
 
   const getProgressWidth = () => {
     switch (animationState) {
-      case 'space': return '20%';
-      case 'zoom1': return '45%';
-      case 'zoom2': return '70%';
-      case 'zoom3': return '90%';
+      case 'space': return '15%';
+      case 'zoom1': return '35%';
+      case 'zoom2': return '55%';
+      case 'zoom3': return '72%';
+      case 'zoom4': return '90%';
       default: return '100%';
     }
   };
@@ -116,8 +124,8 @@ const SatelliteHero = ({ latitude = 10.4123, longitude = -71.4368, locationName 
           <div key={state} className={`satellite-layer ${animationState === state ? 'active' : ''} ${animationState === 'complete' && state === 'dock' ? 'active' : ''}`} style={{ backgroundImage: `url(${getImageForState(state)})`, transform: `scale(${getScaleForState(animationState)})` }} />
         ))}
         <div className="satellite-overlay" style={{ opacity: getOverlayOpacity(animationState) }} />
-        {(animationState === 'space' || animationState === 'zoom1' || animationState === 'zoom2' || animationState === 'zoom3') && <div className="scan-lines" />}
-        {(animationState === 'zoom1' || animationState === 'zoom2' || animationState === 'zoom3') && (
+        {(animationState === 'space' || animationState === 'zoom1' || animationState === 'zoom2' || animationState === 'zoom3' || animationState === 'zoom4') && <div className="scan-lines" />}
+        {(animationState === 'zoom1' || animationState === 'zoom2' || animationState === 'zoom3' || animationState === 'zoom4') && (
           <div className="crosshair-overlay">
             <div className="crosshair-h" /><div className="crosshair-v" />
             <div className="crosshair-center"><div className="crosshair-ring" /><div className="crosshair-dot" /></div>
