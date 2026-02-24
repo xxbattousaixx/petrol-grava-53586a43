@@ -20,6 +20,11 @@ import serviceAlquilerTierra9 from '@/assets/service-alquiler-tierra-9.png';
 import serviceIzamientos from '@/assets/service-izamientos.jpg';
 import serviceIzamientos2 from '@/assets/service-izamientos-2.png';
 import serviceIzamientos3 from '@/assets/service-izamientos-3.png';
+import serviceIzamientos4 from '@/assets/service-izamientos-4.png';
+import serviceIzamientos5 from '@/assets/service-izamientos-5.png';
+import serviceIzamientos6 from '@/assets/service-izamientos-6.png';
+import serviceIzamientos7 from '@/assets/service-izamientos-7.png';
+import serviceIzamientos8 from '@/assets/service-izamientos-8.png';
 import serviceTransporte from '@/assets/service-transporte.jpg';
 import serviceTransporte2 from '@/assets/service-transporte-2.png';
 import serviceTransporte3 from '@/assets/service-transporte-3.png';
@@ -59,6 +64,11 @@ export const serviceImages: Record<string, string> = {
   'service-izamientos': serviceIzamientos,
   'service-izamientos-2': serviceIzamientos2,
   'service-izamientos-3': serviceIzamientos3,
+  'service-izamientos-4': serviceIzamientos4,
+  'service-izamientos-5': serviceIzamientos5,
+  'service-izamientos-6': serviceIzamientos6,
+  'service-izamientos-7': serviceIzamientos7,
+  'service-izamientos-8': serviceIzamientos8,
   'service-transporte': serviceTransporte,
   'service-transporte-2': serviceTransporte2,
   'service-transporte-3': serviceTransporte3,
