@@ -20,6 +20,12 @@ import serviceAlquilerTierra9 from '@/assets/service-alquiler-tierra-9.png';
 import serviceIzamientos from '@/assets/service-izamientos.jpg';
 import serviceTransporte from '@/assets/service-transporte.jpg';
 import serviceSandblasting from '@/assets/service-sandblasting.jpg';
+import serviceSandblasting2 from '@/assets/service-sandblasting-2.png';
+import serviceSandblasting3 from '@/assets/service-sandblasting-3.png';
+import serviceSandblasting4 from '@/assets/service-sandblasting-4.png';
+import serviceSandblasting5 from '@/assets/service-sandblasting-5.png';
+import serviceSandblasting6 from '@/assets/service-sandblasting-6.png';
+import serviceSandblasting7 from '@/assets/service-sandblasting-7.png';
 import serviceLimpieza from '@/assets/service-limpieza.jpg';
 import serviceReacondicionamiento from '@/assets/service-reacondicionamiento.jpg';
 import serviceLineasFlujo from '@/assets/service-lineas-flujo.jpg';
@@ -48,6 +54,12 @@ export const serviceImages: Record<string, string> = {
   'service-izamientos': serviceIzamientos,
   'service-transporte': serviceTransporte,
   'service-sandblasting': serviceSandblasting,
+  'service-sandblasting-2': serviceSandblasting2,
+  'service-sandblasting-3': serviceSandblasting3,
+  'service-sandblasting-4': serviceSandblasting4,
+  'service-sandblasting-5': serviceSandblasting5,
+  'service-sandblasting-6': serviceSandblasting6,
+  'service-sandblasting-7': serviceSandblasting7,
   'service-limpieza': serviceLimpieza,
   'service-reacondicionamiento': serviceReacondicionamiento,
   'service-lineas-flujo': serviceLineasFlujo,
