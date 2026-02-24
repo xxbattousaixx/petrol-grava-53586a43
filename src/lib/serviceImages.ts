@@ -3,6 +3,11 @@
 import serviceAlquilerPortuario from '@/assets/service-alquiler-portuario.jpg';
 import serviceAlquilerPortuario2 from '@/assets/service-alquiler-portuario-2.jpg';
 import serviceAlquilerPortuario3 from '@/assets/service-alquiler-portuario-3.jpg';
+import serviceAlquilerPortuario4 from '@/assets/service-alquiler-portuario-4.png';
+import serviceAlquilerPortuario5 from '@/assets/service-alquiler-portuario-5.png';
+import serviceAlquilerPortuario6 from '@/assets/service-alquiler-portuario-6.png';
+import serviceAlquilerPortuario7 from '@/assets/service-alquiler-portuario-7.png';
+import serviceAlquilerPortuario8 from '@/assets/service-alquiler-portuario-8.png';
 import serviceAlquilerTierra from '@/assets/service-alquiler-tierra.jpg';
 import serviceAlquilerTierra2 from '@/assets/service-alquiler-tierra-2.png';
 import serviceAlquilerTierra3 from '@/assets/service-alquiler-tierra-3.png';
@@ -26,6 +31,11 @@ export const serviceImages: Record<string, string> = {
   'service-alquiler-portuario': serviceAlquilerPortuario,
   'service-alquiler-portuario-2': serviceAlquilerPortuario2,
   'service-alquiler-portuario-3': serviceAlquilerPortuario3,
+  'service-alquiler-portuario-4': serviceAlquilerPortuario4,
+  'service-alquiler-portuario-5': serviceAlquilerPortuario5,
+  'service-alquiler-portuario-6': serviceAlquilerPortuario6,
+  'service-alquiler-portuario-7': serviceAlquilerPortuario7,
+  'service-alquiler-portuario-8': serviceAlquilerPortuario8,
   'service-alquiler-tierra': serviceAlquilerTierra,
   'service-alquiler-tierra-2': serviceAlquilerTierra2,
   'service-alquiler-tierra-3': serviceAlquilerTierra3,
