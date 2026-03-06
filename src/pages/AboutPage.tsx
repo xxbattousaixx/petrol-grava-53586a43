@@ -4,6 +4,8 @@ import { useLanguage } from '@/i18n/LanguageContext';
 import { translations } from '@/i18n/translations';
 import { CheckCircle } from 'lucide-react';
 import aboutDock from '@/assets/about-dock.jpg';
+import about2 from '@/assets/about-2.png';
+import about3 from '@/assets/about-3.png';
 import mission1 from '@/assets/mission-1.jpg';
 import mission2 from '@/assets/mission-2.jpg';
 import { useScroll, useTransform } from 'framer-motion';
