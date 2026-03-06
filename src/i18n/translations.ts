@@ -290,6 +290,7 @@ export const servicesData = [
     shortDesc: { es: "Mantenimiento especializado en áreas de líneas de flujo petroleras.", en: "Specialized maintenance in oil flow line areas." },
     fullDesc: { es: "Ofrecemos servicios de mantenimiento especializado en áreas de líneas de flujo para la industria petrolera. Nuestro servicio incluye inspección, reparación, reemplazo de tramos deteriorados, aplicación de protección anticorrosiva y pruebas hidrostáticas. Contamos con personal técnico calificado y equipos especializados que garantizan la integridad operacional de las líneas de flujo, minimizando los tiempos de parada y maximizando la seguridad operativa.", en: "We offer specialized maintenance services in flow line areas for the oil industry. Our service includes inspection, repair, replacement of deteriorated sections, anti-corrosive protection application, and hydrostatic testing. We have qualified technical personnel and specialized equipment that guarantee the operational integrity of flow lines, minimizing downtime and maximizing operational safety." },
     image: "service-lineas-flujo",
+    gallery: ["service-lineas-flujo", "service-lineas-flujo-2", "service-lineas-flujo-3", "service-lineas-flujo-4", "service-lineas-flujo-5"],
   },
   {
     id: "diques",
