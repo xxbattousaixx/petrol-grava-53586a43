@@ -53,6 +53,8 @@ const AboutPage = () => {
                 <div className="absolute inset-0 bg-gradient-to-t from-petrol-green-900/30 to-transparent" />
               </motion.div>
               <img src={mission1} alt="Operations" className="w-full h-auto object-contain shadow-xl" />
+              <img src={about2} alt="Platform scaffolding" className="w-full h-auto object-contain shadow-xl" />
+              <img src={about3} alt="Platform maintenance" className="w-full h-auto object-contain shadow-xl" />
             </motion.div>
           </div>
         </div>
