@@ -9,11 +9,20 @@ const MissionVisionPage = () => {
   const { t } = useLanguage();
   return (
     <>
-      <section className="relative py-32 md:py-40 bg-petrol-green-900 text-white overflow-hidden">
-        <div className="absolute inset-0 opacity-10"><div className="absolute top-10 right-10 w-32 h-32 border border-white rounded-full" /><div className="absolute bottom-20 left-20 w-48 h-48 border border-white rounded-full" /></div>
-        <div className="container mx-auto px-4 md:px-6 relative z-10 text-center">
-          <motion.span initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} className="font-mono text-petrol-gold text-xs tracking-[0.3em] mb-4 block">{t(translations.nav.mission).toUpperCase()}</motion.span>
-          <div className="overflow-hidden"><motion.h1 initial={{ y: '100%' }} animate={{ y: 0 }} transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }} className="font-heading font-bold text-5xl md:text-7xl lg:text-8xl uppercase tracking-tight">{t(translations.mission.title)} & {t(translations.vision.title)}</motion.h1></div>
+      <section className="relative bg-petrol-green-900 text-white overflow-hidden">
+        <div className="relative z-10 text-center pt-32 md:pt-40 pb-12">
+          <div className="absolute inset-0 opacity-10 pointer-events-none"><div className="absolute top-10 right-10 w-32 h-32 border border-white rounded-full" /><div className="absolute bottom-20 left-20 w-48 h-48 border border-white rounded-full" /></div>
+          <div className="container mx-auto px-4 md:px-6 relative z-10">
+            <motion.span initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} className="font-mono text-petrol-gold text-xs tracking-[0.3em] mb-4 block">{t(translations.nav.mission).toUpperCase()}</motion.span>
+            <div className="overflow-hidden"><motion.h1 initial={{ y: '100%' }} animate={{ y: 0 }} transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }} className="font-heading font-bold text-5xl md:text-7xl lg:text-8xl uppercase tracking-tight">{t(translations.mission.title)} & {t(translations.vision.title)}</motion.h1></div>
+          </div>
+        </div>
+        <div className="relative">
+          <div className="absolute top-0 left-0 right-0 h-24 bg-gradient-to-b from-petrol-green-900 to-transparent z-10 pointer-events-none" />
+          <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-petrol-green-900 to-transparent z-10 pointer-events-none" />
+          <video autoPlay loop muted playsInline className="w-full h-[50vh] md:h-[70vh] object-cover">
+            <source src="/assets/video-muelle-2.mp4" type="video/mp4" />
+          </video>
         </div>
       </section>
       <section className="py-24 md:py-32 bg-industrial-white">
@@ -43,15 +52,6 @@ const MissionVisionPage = () => {
             </motion.div>
           </div>
         </div>
-      </section>
-      <section className="relative bg-petrol-green-900 overflow-hidden">
-        <div className="absolute top-0 left-0 right-0 h-24 bg-gradient-to-b from-petrol-green-900 to-transparent z-10 pointer-events-none" />
-        <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-petrol-green-900 to-transparent z-10 pointer-events-none" />
-        <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} transition={{ duration: 1 }}>
-          <video autoPlay loop muted playsInline className="w-full h-[50vh] md:h-[70vh] object-cover">
-            <source src="/assets/video-muelle-2.mp4" type="video/mp4" />
-          </video>
-        </motion.div>
       </section>
       <section className="py-20 bg-petrol-green-900 text-white">
         <div className="container mx-auto px-4 md:px-6">
