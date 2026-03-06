@@ -4,8 +4,6 @@ import { useLanguage } from '@/i18n/LanguageContext';
 import { translations } from '@/i18n/translations';
 import { CheckCircle } from 'lucide-react';
 import aboutDock from '@/assets/about-dock.jpg';
-import about2 from '@/assets/about-2.png';
-import about3 from '@/assets/about-3.png';
 import mission1 from '@/assets/mission-1.jpg';
 import mission2 from '@/assets/mission-2.jpg';
 import { useScroll, useTransform } from 'framer-motion';
@@ -53,8 +51,6 @@ const AboutPage = () => {
                 <div className="absolute inset-0 bg-gradient-to-t from-petrol-green-900/30 to-transparent" />
               </motion.div>
               <img src={mission1} alt="Operations" className="w-full h-auto object-contain shadow-xl" />
-              <img src={about2} alt="Platform scaffolding" className="w-full h-auto object-contain shadow-xl" />
-              <img src={about3} alt="Platform maintenance" className="w-full h-auto object-contain shadow-xl" />
             </motion.div>
           </div>
         </div>
@@ -75,11 +71,12 @@ const AboutPage = () => {
           </div>
         </div>
       </section>
-      <section className="relative">
-        <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} transition={{ duration: 0.8 }}>
-          <img src={mission2} alt="Petrol Grava facilities" className="w-full h-[50vh] object-cover" />
-          <div className="absolute inset-0 bg-gradient-to-t from-petrol-green-900/60 to-transparent" />
-        </motion.div>
+      <section className="relative bg-petrol-green-900 overflow-hidden">
+        <div className="absolute top-0 left-0 right-0 h-24 bg-gradient-to-b from-petrol-green-900 to-transparent z-10 pointer-events-none" />
+        <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-petrol-green-900 to-transparent z-10 pointer-events-none" />
+        <video autoPlay loop muted playsInline className="w-full h-[50vh] md:h-[70vh] object-cover">
+          <source src="/assets/video-muelle.mp4" type="video/mp4" />
+        </video>
       </section>
     </div>
   );
