@@ -266,6 +266,7 @@ export const servicesData = [
     shortDesc: { es: "Servicios profesionales de sandblasting y waterblasting para limpieza y preparación de superficies.", en: "Professional sandblasting and waterblasting services for surface cleaning and preparation." },
     fullDesc: { es: "Brindamos servicios profesionales de sandblasting y waterblasting para la limpieza y preparación de superficies metálicas en unidades lacustres y equipos industriales. Nuestro servicio incluye la remoción de óxido, pintura deteriorada y contaminantes, preparando la superficie para la aplicación de recubrimientos protectores. Utilizamos equipos de última generación y arena de alta calidad para garantizar un acabado óptimo que cumpla con las especificaciones técnicas requeridas.", en: "We provide professional sandblasting and waterblasting services for cleaning and preparing metal surfaces on lacustrine units and industrial equipment. Our service includes removal of rust, deteriorated paint, and contaminants, preparing the surface for application of protective coatings. We use state-of-the-art equipment and high-quality sand to ensure an optimal finish that meets required technical specifications." },
     image: "service-sandblasting",
+    gallery: ["service-sandblasting", "service-sandblasting-2", "service-sandblasting-3", "service-sandblasting-4", "service-sandblasting-5", "service-sandblasting-6", "service-sandblasting-7", "service-sandblasting-8", "service-sandblasting-9", "service-sandblasting-10"],
   },
   {
     id: "limpieza-presion",
