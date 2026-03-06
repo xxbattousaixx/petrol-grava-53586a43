@@ -4,6 +4,8 @@ import { useLanguage } from '@/i18n/LanguageContext';
 import { translations } from '@/i18n/translations';
 import { CheckCircle } from 'lucide-react';
 import aboutDock from '@/assets/about-dock.jpg';
+import about2 from '@/assets/about-2.png';
+import about3 from '@/assets/about-3.png';
 import mission1 from '@/assets/mission-1.jpg';
 import mission2 from '@/assets/mission-2.jpg';
 import { useScroll, useTransform } from 'framer-motion';
@@ -51,6 +53,8 @@ const AboutPage = () => {
                 <div className="absolute inset-0 bg-gradient-to-t from-petrol-green-900/30 to-transparent" />
               </motion.div>
               <img src={mission1} alt="Operations" className="w-full h-auto object-contain shadow-xl" />
+              <img src={about2} alt="Platform scaffolding" className="w-full h-auto object-contain shadow-xl" />
+              <img src={about3} alt="Platform maintenance" className="w-full h-auto object-contain shadow-xl" />
             </motion.div>
           </div>
         </div>
