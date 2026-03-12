@@ -144,16 +144,18 @@ const SatelliteHero = ({ latitude = 10.4123, longitude = -71.4368, locationName 
             <div key={state} className={`satellite-layer ${animationState === state ? 'active' : ''} ${animationState === 'complete' && state === 'dock' ? 'active' : ''}`} style={{ backgroundImage: `url(${getImageForState(state)})`, transform: `scale(${getScaleForState(animationState)})` }} />
           );
         })}
-        {/* Video layer */}
+        {/* Video layer - loops as background during complete state */}
         <div 
-          className={`satellite-layer ${animationState === 'video' ? 'active' : ''}`} 
+          className={`satellite-layer ${animationState === 'complete' ? 'active' : ''}`} 
           style={{ 
             transform: `scale(${getScaleForState(animationState)})`,
             overflow: 'hidden',
+            zIndex: 1,
           }}
         >
           <video
             ref={videoRef}
+            loop
             muted
             playsInline
             preload="auto"
