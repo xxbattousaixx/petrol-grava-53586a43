@@ -20,7 +20,7 @@ import serviceIzamientos2 from '@/assets/service-izamientos-2.png';
 import serviceIzamientos4 from '@/assets/service-izamientos-4.png';
 import serviceIzamientos5 from '@/assets/service-izamientos-5.png';
 import serviceIzamientos6 from '@/assets/service-izamientos-6.png';
-import serviceIzamientos7 from '@/assets/service-izamientos-7.png';
+
 import serviceIzamientos8 from '@/assets/service-izamientos-8.png';
 import serviceTransporte from '@/assets/service-transporte.jpg';
 import serviceTransporte2 from '@/assets/service-transporte-2.png';
