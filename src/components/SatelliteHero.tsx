@@ -4,7 +4,7 @@ import { MapPin, ChevronRight, ArrowRight } from 'lucide-react';
 import { useLanguage } from '@/i18n/LanguageContext';
 import { translations } from '@/i18n/translations';
 
-const ANIMATION_STATES = ['idle', 'space', 'zoom1', 'zoom2', 'map', 'zoom3', 'zoom4', 'dock', 'video', 'complete'];
+const ANIMATION_STATES = ['idle', 'space', 'zoom1', 'zoom2', 'map', 'zoom3', 'zoom4', 'dock', 'complete'];
 
 interface SatelliteHeroProps {
   latitude?: number;
@@ -59,21 +59,13 @@ const SatelliteHero = ({ latitude = 10.4123, longitude = -71.4368, locationName 
       await dockFinalLoaded;
       setAnimationState('dock');
       await new Promise(r => setTimeout(r, 800));
-      // Video as final slide
-      setAnimationState('video');
-      // Play video and wait for it to end or timeout after 8s
+      setAnimationState('complete');
+      setShowContent(true);
+      // Start looping video background
       if (videoRef.current) {
         videoRef.current.currentTime = 0;
         videoRef.current.play().catch(() => {});
       }
-      await new Promise<void>(r => {
-        const timeout = setTimeout(r, 8000);
-        if (videoRef.current) {
-          videoRef.current.onended = () => { clearTimeout(timeout); r(); };
-        }
-      });
-      setAnimationState('complete');
-      setShowContent(true);
       onAnimationComplete?.();
     };
     sequence();
@@ -84,7 +76,7 @@ const SatelliteHero = ({ latitude = 10.4123, longitude = -71.4368, locationName 
   }, [startAnimation]);
 
   const skipAnimation = useCallback(() => {
-    if (videoRef.current) { videoRef.current.pause(); }
+    if (videoRef.current) { videoRef.current.play().catch(() => {}); }
     setAnimationState('complete');
     setShowContent(true);
     hasStarted.current = true;
@@ -98,7 +90,7 @@ const SatelliteHero = ({ latitude = 10.4123, longitude = -71.4368, locationName 
       case 'map': return '/assets/satellite-lago-map.jpg';
       case 'zoom3': return '/assets/satellite-dock-aerial.png';
       case 'zoom4': return '/assets/dock-wide-aerial.jpg';
-      case 'dock': case 'video': case 'complete': return '/assets/dock-aerial-view.jpg';
+      case 'dock': case 'complete': return '/assets/dock-aerial-view.jpg'; // fallback behind video
       default: return '/assets/satellite-earth-space.jpg';
     }
   };
@@ -112,7 +104,7 @@ const SatelliteHero = ({ latitude = 10.4123, longitude = -71.4368, locationName 
       case 'map': return 1.05;
       case 'zoom3': return 1.12;
       case 'zoom4': return 1.1;
-      case 'dock': case 'video': case 'complete': return 1.05;
+      case 'dock': case 'complete': return 1.05;
       default: return 1;
     }
   };
@@ -125,7 +117,6 @@ const SatelliteHero = ({ latitude = 10.4123, longitude = -71.4368, locationName 
       case 'zoom3': return 0.35;
       case 'zoom4': return 0.45;
       case 'dock': return 0.55;
-      case 'video': return 0.3;
       case 'complete': return 0.55;
       default: return 0.3;
     }
@@ -139,8 +130,7 @@ const SatelliteHero = ({ latitude = 10.4123, longitude = -71.4368, locationName 
       case 'map': return '50%';
       case 'zoom3': return '62%';
       case 'zoom4': return '75%';
-      case 'dock': return '85%';
-      case 'video': return '95%';
+      case 'dock': return '90%';
       default: return '100%';
     }
   };
@@ -154,16 +144,18 @@ const SatelliteHero = ({ latitude = 10.4123, longitude = -71.4368, locationName 
             <div key={state} className={`satellite-layer ${animationState === state ? 'active' : ''} ${animationState === 'complete' && state === 'dock' ? 'active' : ''}`} style={{ backgroundImage: `url(${getImageForState(state)})`, transform: `scale(${getScaleForState(animationState)})` }} />
           );
         })}
-        {/* Video layer */}
+        {/* Video layer - loops as background during complete state */}
         <div 
-          className={`satellite-layer ${animationState === 'video' ? 'active' : ''}`} 
+          className={`satellite-layer ${animationState === 'complete' ? 'active' : ''}`} 
           style={{ 
             transform: `scale(${getScaleForState(animationState)})`,
             overflow: 'hidden',
+            zIndex: 1,
           }}
         >
           <video
             ref={videoRef}
+            loop
             muted
             playsInline
             preload="auto"
