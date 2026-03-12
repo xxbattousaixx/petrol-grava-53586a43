@@ -118,7 +118,7 @@ export const translations = {
       es: "Av. Principal La Rosa, al frente de la Iglesia Juan Bautista, Cabimas, Estado Zulia, Venezuela",
       en: "Av. Principal La Rosa, in front of Juan Bautista Church, Cabimas, Zulia State, Venezuela",
     },
-    phoneNumbers: "0412-0709379",
+    phoneNumbers: "+58 412-064-4051",
     emails: ["petrolgravagerencia@gmail.com", "petrolgravaadm@gmail.com"],
     schedule: { es: "Lunes a Viernes: 7:00 AM - 5:00 PM", en: "Monday to Friday: 7:00 AM - 5:00 PM" },
     success: { es: "¡Mensaje Enviado!", en: "Message Sent!" },
