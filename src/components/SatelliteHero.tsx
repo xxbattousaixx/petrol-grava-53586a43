@@ -90,7 +90,7 @@ const SatelliteHero = ({ latitude = 10.4123, longitude = -71.4368, locationName 
       case 'map': return '/assets/satellite-lago-map.jpg';
       case 'zoom3': return '/assets/satellite-dock-aerial.png';
       case 'zoom4': return '/assets/dock-wide-aerial.jpg';
-      case 'dock': case 'video': case 'complete': return '/assets/dock-aerial-view.jpg';
+      case 'dock': case 'complete': return '/assets/dock-aerial-view.jpg'; // fallback behind video
       default: return '/assets/satellite-earth-space.jpg';
     }
   };
