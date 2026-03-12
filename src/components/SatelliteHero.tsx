@@ -147,12 +147,26 @@ const SatelliteHero = ({ latitude = 10.4123, longitude = -71.4368, locationName 
   return (
     <div ref={containerRef} className="satellite-hero">
       <div className="satellite-layers">
-        {ANIMATION_STATES.map((state) => (
-          <div key={state} className={`satellite-layer ${animationState === state ? 'active' : ''} ${animationState === 'complete' && state === 'dock' ? 'active' : ''}`} style={{ backgroundImage: `url(${getImageForState(state)})`, transform: `scale(${getScaleForState(animationState)})` }} />
-        ))}
+        {ANIMATION_STATES.map((state) => {
+          if (state === 'video') return null;
+          return (
+            <div key={state} className={`satellite-layer ${animationState === state ? 'active' : ''} ${animationState === 'complete' && state === 'dock' ? 'active' : ''}`} style={{ backgroundImage: `url(${getImageForState(state)})`, transform: `scale(${getScaleForState(animationState)})` }} />
+          );
+        })}
+        {/* Video layer */}
+        <div className={`satellite-layer ${animationState === 'video' ? 'active' : ''}`} style={{ transform: `scale(${getScaleForState(animationState)})` }}>
+          <video
+            ref={videoRef}
+            src="/assets/video-final.mp4"
+            muted
+            playsInline
+            preload="auto"
+            className="absolute inset-0 w-full h-full object-cover"
+          />
+        </div>
         <div className="satellite-overlay" style={{ opacity: getOverlayOpacity(animationState) }} />
-        {(animationState === 'space' || animationState === 'zoom1' || animationState === 'zoom2' || animationState === 'zoom3' || animationState === 'zoom4') && <div className="scan-lines" />}
-        {(animationState === 'zoom1' || animationState === 'zoom2' || animationState === 'zoom3' || animationState === 'zoom4') && (
+        {(animationState === 'space' || animationState === 'zoom1' || animationState === 'zoom2' || animationState === 'map' || animationState === 'zoom3' || animationState === 'zoom4') && <div className="scan-lines" />}
+        {(animationState === 'zoom1' || animationState === 'zoom2' || animationState === 'map' || animationState === 'zoom3' || animationState === 'zoom4') && (
           <div className="crosshair-overlay">
             <div className="crosshair-h" /><div className="crosshair-v" />
             <div className="crosshair-center"><div className="crosshair-ring" /><div className="crosshair-dot" /></div>
