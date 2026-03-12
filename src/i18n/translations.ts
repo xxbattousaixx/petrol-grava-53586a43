@@ -43,8 +43,8 @@ export const translations = {
         en: "Open Areas West Side: 296 linear meters with 4 to 8 feet depth (Special for scrapping)",
       },
       east: {
-        es: "Áreas Abiertas lado Este: mts lineales con profundidad de 2 a 4 pies (Especial para lanchas y gabarras poco calado)",
-        en: "Open Areas East Side: linear meters with 2 to 4 feet depth (Special for boats and shallow draft barges)",
+        es: "Áreas Abiertas lado Este: 223 mts lineales con profundidad de 2 a 4 pies (Especial para lanchas y gabarras poco calado)",
+        en: "Open Areas East Side: 223 linear meters with 2 to 4 feet depth (Special for boats and shallow draft barges)",
       },
     },
     experience: {
