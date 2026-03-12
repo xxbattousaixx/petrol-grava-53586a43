@@ -115,18 +115,43 @@ const Navbar = () => {
             <div className="container mx-auto py-4">
               <MobileLink to="/" label={t(translations.nav.home)} onClick={() => setMobileOpen(false)} />
               <MobileLink to="/nosotros" label={t(translations.nav.about)} onClick={() => setMobileOpen(false)} />
-              <div className="px-4 py-2 mt-2">
-                <span className="text-petrol-gold text-xs font-heading font-bold uppercase tracking-widest">{t(translations.nav.services)}</span>
-              </div>
-              {servicesData.map((s) => (
-                <MobileLink key={s.id} to={`/servicios/${s.slug}`} label={t(s.title)} onClick={() => setMobileOpen(false)} indent />
-              ))}
-              <div className="px-4 py-2 mt-2">
-                <span className="text-petrol-gold text-xs font-heading font-bold uppercase tracking-widest">{t(translations.policies.navLabel)}</span>
-              </div>
-              {policiesData.map((p) => (
-                <MobileLink key={p.slug} to={`/politicas/${p.slug}`} label={t(p.title)} onClick={() => setMobileOpen(false)} indent />
-              ))}
+
+              {/* Services Dropdown */}
+              <button
+                onClick={() => setMobileServicesOpen(!mobileServicesOpen)}
+                className="w-full flex items-center justify-between px-4 py-2.5 font-heading font-semibold uppercase tracking-wider text-sm text-foreground hover:bg-petrol-green/10 hover:text-petrol-green transition-colors"
+              >
+                {t(translations.nav.services)}
+                <ChevronDown className={`h-4 w-4 transition-transform duration-200 ${mobileServicesOpen ? 'rotate-180' : ''}`} />
+              </button>
+              <AnimatePresence>
+                {mobileServicesOpen && (
+                  <motion.div initial={{ opacity: 0, height: 0 }} animate={{ opacity: 1, height: 'auto' }} exit={{ opacity: 0, height: 0 }} transition={{ duration: 0.2 }} className="overflow-hidden">
+                    {servicesData.map((s) => (
+                      <MobileLink key={s.id} to={`/servicios/${s.slug}`} label={t(s.title)} onClick={() => setMobileOpen(false)} indent />
+                    ))}
+                  </motion.div>
+                )}
+              </AnimatePresence>
+
+              {/* Policies Dropdown */}
+              <button
+                onClick={() => setMobilePoliciesOpen(!mobilePoliciesOpen)}
+                className="w-full flex items-center justify-between px-4 py-2.5 font-heading font-semibold uppercase tracking-wider text-sm text-foreground hover:bg-petrol-green/10 hover:text-petrol-green transition-colors"
+              >
+                {t(translations.policies.navLabel)}
+                <ChevronDown className={`h-4 w-4 transition-transform duration-200 ${mobilePoliciesOpen ? 'rotate-180' : ''}`} />
+              </button>
+              <AnimatePresence>
+                {mobilePoliciesOpen && (
+                  <motion.div initial={{ opacity: 0, height: 0 }} animate={{ opacity: 1, height: 'auto' }} exit={{ opacity: 0, height: 0 }} transition={{ duration: 0.2 }} className="overflow-hidden">
+                    {policiesData.map((p) => (
+                      <MobileLink key={p.slug} to={`/politicas/${p.slug}`} label={t(p.title)} onClick={() => setMobileOpen(false)} indent />
+                    ))}
+                  </motion.div>
+                )}
+              </AnimatePresence>
+
               <MobileLink to="/mision-vision" label={t(translations.nav.mission)} onClick={() => setMobileOpen(false)} />
               <MobileLink to="/contacto" label={t(translations.nav.contact)} onClick={() => setMobileOpen(false)} />
             </div>
