@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { useLanguage } from '@/i18n/LanguageContext';
 import { translations, servicesData } from '@/i18n/translations';
 import { Menu, X, ChevronDown, Globe } from 'lucide-react';
-import logoHeader from '@/assets/logo-header.jpg';
+import logoHeader from '@/assets/logo-header-wide.jpg';
 
 const policiesData = [
   { slug: translations.policies.safety.slug, title: translations.policies.safety.shortTitle },
