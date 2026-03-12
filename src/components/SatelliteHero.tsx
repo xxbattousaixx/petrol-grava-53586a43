@@ -41,8 +41,13 @@ const SatelliteHero = ({ latitude = 10.4123, longitude = -71.4368, locationName 
       await new Promise(r => setTimeout(r, 1800));
       await maracaiboLoaded;
       setAnimationState('zoom2');
-      const dockAerialLoaded = loadImage('/assets/satellite-dock-aerial.png');
+      // Map slide (4th position)
+      const mapLoaded = loadImage('/assets/satellite-lago-map.jpg');
       await new Promise(r => setTimeout(r, 1800));
+      await mapLoaded;
+      setAnimationState('map');
+      const dockAerialLoaded = loadImage('/assets/satellite-dock-aerial.png');
+      await new Promise(r => setTimeout(r, 2200));
       await dockAerialLoaded;
       setAnimationState('zoom3');
       const dockWideLoaded = loadImage('/assets/dock-wide-aerial.jpg');
@@ -54,6 +59,19 @@ const SatelliteHero = ({ latitude = 10.4123, longitude = -71.4368, locationName 
       await dockFinalLoaded;
       setAnimationState('dock');
       await new Promise(r => setTimeout(r, 800));
+      // Video as final slide
+      setAnimationState('video');
+      // Play video and wait for it to end or timeout after 8s
+      if (videoRef.current) {
+        videoRef.current.currentTime = 0;
+        videoRef.current.play().catch(() => {});
+      }
+      await new Promise<void>(r => {
+        const timeout = setTimeout(r, 8000);
+        if (videoRef.current) {
+          videoRef.current.onended = () => { clearTimeout(timeout); r(); };
+        }
+      });
       setAnimationState('complete');
       setShowContent(true);
       onAnimationComplete?.();
