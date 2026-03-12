@@ -123,9 +123,8 @@ const SatelliteHero = ({ latitude = 10.4123, longitude = -71.4368, locationName 
       <div className="satellite-layers">
         {ANIMATION_STATES.map((state) => {
           if (state === 'video') return null;
-          const isMapZoom = state === 'map' && animationState === 'map';
           return (
-            <div key={state} className={`satellite-layer ${animationState === state ? 'active' : ''} ${animationState === 'complete' && state === 'dock' ? 'active' : ''} ${isMapZoom ? 'map-zoom' : ''}`} style={{ backgroundImage: `url(${getImageForState(state)})`, ...(!isMapZoom ? { transform: `scale(${getScaleForState(animationState)})` } : {}) }} />
+            <div key={state} className={`satellite-layer ${animationState === state ? 'active' : ''} ${animationState === 'complete' && state === 'dock' ? 'active' : ''}`} style={{ backgroundImage: `url(${getImageForState(state)})`, transform: `scale(${getScaleForState(animationState)})` }} />
           );
         })}
         {/* Video layer - loops as background during complete state */}
