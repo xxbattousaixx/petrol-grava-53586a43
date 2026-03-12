@@ -10,7 +10,7 @@ interface AnimatedCounterProps {
 const AnimatedCounter = ({ value, suffix = '', duration = 2 }: AnimatedCounterProps) => {
   const [count, setCount] = useState(0);
   const ref = useRef<HTMLSpanElement>(null);
-  const isInView = useInView(ref, { once: true, margin: '-100px' });
+  const isInView = useInView(ref, { once: true, margin: '0px' });
   const numericValue = parseInt(value.replace(/[^0-9]/g, ''), 10);
 
   useEffect(() => {
