@@ -40,6 +40,7 @@ import serviceSandblasting8 from '@/assets/service-sandblasting-8.png';
 import serviceSandblasting9 from '@/assets/service-sandblasting-9.png';
 import serviceSandblasting10 from '@/assets/service-sandblasting-10.png';
 import serviceLimpieza from '@/assets/service-limpieza.jpg';
+import serviceLimpieza2 from '@/assets/service-limpieza-2.png';
 import serviceReacondicionamiento from '@/assets/service-reacondicionamiento.jpg';
 import serviceLineasFlujo from '@/assets/service-lineas-flujo.jpg';
 import serviceLineasFlujo2 from '@/assets/service-lineas-flujo-2.png';
