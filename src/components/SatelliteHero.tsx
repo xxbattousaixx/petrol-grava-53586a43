@@ -104,7 +104,7 @@ const SatelliteHero = ({ latitude = 10.4123, longitude = -71.4368, locationName 
       case 'map': return 1.05;
       case 'zoom3': return 1.12;
       case 'zoom4': return 1.1;
-      case 'dock': case 'video': case 'complete': return 1.05;
+      case 'dock': case 'complete': return 1.05;
       default: return 1;
     }
   };
