@@ -117,7 +117,6 @@ const SatelliteHero = ({ latitude = 10.4123, longitude = -71.4368, locationName 
       case 'zoom3': return 0.35;
       case 'zoom4': return 0.45;
       case 'dock': return 0.55;
-      case 'video': return 0.3;
       case 'complete': return 0.55;
       default: return 0.3;
     }
