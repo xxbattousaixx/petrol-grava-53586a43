@@ -41,17 +41,12 @@ const SatelliteHero = ({ latitude = 10.4123, longitude = -71.4368, locationName 
       await new Promise(r => setTimeout(r, 1800));
       await maracaiboLoaded;
       setAnimationState('zoom2');
-      // Map slide (4th position)
       const mapLoaded = loadImage('/assets/satellite-lago-map.jpg');
       await new Promise(r => setTimeout(r, 1800));
       await mapLoaded;
       setAnimationState('map');
-      const dockAerialLoaded = loadImage('/assets/satellite-dock-aerial.png');
-      await new Promise(r => setTimeout(r, 2200));
-      await dockAerialLoaded;
-      setAnimationState('zoom3');
       const dockWideLoaded = loadImage('/assets/dock-wide-aerial.jpg');
-      await new Promise(r => setTimeout(r, 1800));
+      await new Promise(r => setTimeout(r, 4400));
       await dockWideLoaded;
       setAnimationState('zoom4');
       const dockFinalLoaded = loadImage('/assets/dock-aerial-view.jpg');
