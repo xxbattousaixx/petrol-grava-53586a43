@@ -155,15 +155,22 @@ const SatelliteHero = ({ latitude = 10.4123, longitude = -71.4368, locationName 
           );
         })}
         {/* Video layer */}
-        <div className={`satellite-layer ${animationState === 'video' ? 'active' : ''}`} style={{ transform: `scale(${getScaleForState(animationState)})` }}>
+        <div 
+          className={`satellite-layer ${animationState === 'video' ? 'active' : ''}`} 
+          style={{ 
+            transform: `scale(${getScaleForState(animationState)})`,
+            overflow: 'hidden',
+          }}
+        >
           <video
             ref={videoRef}
-            src="/assets/video-final.mp4"
             muted
             playsInline
             preload="auto"
-            className="absolute inset-0 w-full h-full object-cover"
-          />
+            style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover' }}
+          >
+            <source src="/assets/video-muelle-2.mp4" type="video/mp4" />
+          </video>
         </div>
         <div className="satellite-overlay" style={{ opacity: getOverlayOpacity(animationState) }} />
         {(animationState === 'space' || animationState === 'zoom1' || animationState === 'zoom2' || animationState === 'map' || animationState === 'zoom3' || animationState === 'zoom4') && <div className="scan-lines" />}
