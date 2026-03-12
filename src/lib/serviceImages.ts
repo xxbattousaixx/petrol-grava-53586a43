@@ -32,7 +32,7 @@ import serviceSandblasting3 from '@/assets/service-sandblasting-3.png';
 import serviceSandblasting4 from '@/assets/service-sandblasting-4.png';
 import serviceSandblasting5 from '@/assets/service-sandblasting-5.png';
 import serviceSandblasting6 from '@/assets/service-sandblasting-6.png';
-import serviceSandblasting7 from '@/assets/service-sandblasting-7.png';
+
 import serviceSandblasting8 from '@/assets/service-sandblasting-8.png';
 import serviceSandblasting9 from '@/assets/service-sandblasting-9.png';
 import serviceSandblasting10 from '@/assets/service-sandblasting-10.png';
