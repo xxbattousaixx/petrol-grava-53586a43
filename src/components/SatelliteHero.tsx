@@ -107,7 +107,6 @@ const SatelliteHero = ({ latitude = 10.4123, longitude = -71.4368, locationName 
       case 'idle': return 0.4;
       case 'space': case 'zoom1': case 'zoom2': return 0.3;
       case 'map': return 0.25;
-      case 'zoom3': return 0.35;
       case 'zoom4': return 0.45;
       case 'dock': return 0.55;
       case 'complete': return 0.55;
@@ -119,10 +118,9 @@ const SatelliteHero = ({ latitude = 10.4123, longitude = -71.4368, locationName 
     switch (animationState) {
       case 'space': return '10%';
       case 'zoom1': return '25%';
-      case 'zoom2': return '40%';
-      case 'map': return '50%';
-      case 'zoom3': return '62%';
-      case 'zoom4': return '75%';
+      case 'zoom2': return '45%';
+      case 'map': return '60%';
+      case 'zoom4': return '80%';
       case 'dock': return '90%';
       default: return '100%';
     }
