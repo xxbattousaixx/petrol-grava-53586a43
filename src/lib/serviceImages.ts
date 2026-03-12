@@ -73,7 +73,7 @@ export const serviceImages: Record<string, string> = {
   'service-izamientos-8': serviceIzamientos8,
   'service-transporte': serviceTransporte,
   'service-transporte-2': serviceTransporte2,
-  'service-transporte-3': serviceTransporte3,
+  
   'service-transporte-4': serviceTransporte4,
   'service-sandblasting': serviceSandblasting,
   'service-sandblasting-2': serviceSandblasting2,
