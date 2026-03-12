@@ -78,7 +78,6 @@ const SatelliteHero = ({ latitude = 10.4123, longitude = -71.4368, locationName 
       case 'idle': case 'space': return '/assets/satellite-earth-space.jpg';
       case 'zoom1': return '/assets/satellite-venezuela-region.jpg';
       case 'zoom2': return '/assets/satellite-lake-maracaibo.jpg';
-      case 'map': return '/assets/satellite-lago-map.jpg';
       case 'zoom4': return '/assets/dock-wide-aerial.jpg';
       case 'dock': case 'complete': return '/assets/dock-aerial-view.jpg';
       default: return '/assets/satellite-earth-space.jpg';
