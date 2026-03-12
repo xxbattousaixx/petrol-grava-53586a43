@@ -148,8 +148,8 @@ const SatelliteHero = ({ latitude = 10.4123, longitude = -71.4368, locationName 
           </video>
         </div>
         <div className="satellite-overlay" style={{ opacity: getOverlayOpacity(animationState) }} />
-        {(animationState === 'space' || animationState === 'zoom1' || animationState === 'zoom2' || animationState === 'map' || animationState === 'zoom3' || animationState === 'zoom4') && <div className="scan-lines" />}
-        {(animationState === 'zoom1' || animationState === 'zoom2' || animationState === 'map' || animationState === 'zoom3' || animationState === 'zoom4') && (
+        {(animationState === 'space' || animationState === 'zoom1' || animationState === 'zoom2' || animationState === 'zoom4') && <div className="scan-lines" />}
+        {(animationState === 'zoom1' || animationState === 'zoom2' || animationState === 'zoom4') && (
           <div className="crosshair-overlay">
             <div className="crosshair-h" /><div className="crosshair-v" />
             <div className="crosshair-center"><div className="crosshair-ring" /><div className="crosshair-dot" /></div>
