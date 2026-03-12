@@ -81,7 +81,7 @@ export const serviceImages: Record<string, string> = {
   'service-sandblasting-4': serviceSandblasting4,
   'service-sandblasting-5': serviceSandblasting5,
   'service-sandblasting-6': serviceSandblasting6,
-  'service-sandblasting-7': serviceSandblasting7,
+  
   'service-sandblasting-8': serviceSandblasting8,
   'service-sandblasting-9': serviceSandblasting9,
   'service-sandblasting-10': serviceSandblasting10,
