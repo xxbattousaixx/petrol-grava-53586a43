@@ -111,9 +111,8 @@ const SatelliteHero = ({ latitude = 10.4123, longitude = -71.4368, locationName 
     switch (animationState) {
       case 'space': return '10%';
       case 'zoom1': return '25%';
-      case 'zoom2': return '45%';
-      case 'map': return '60%';
-      case 'zoom4': return '80%';
+      case 'zoom2': return '50%';
+      case 'zoom4': return '75%';
       case 'dock': return '90%';
       default: return '100%';
     }
