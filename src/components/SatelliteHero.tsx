@@ -130,8 +130,7 @@ const SatelliteHero = ({ latitude = 10.4123, longitude = -71.4368, locationName 
       case 'map': return '50%';
       case 'zoom3': return '62%';
       case 'zoom4': return '75%';
-      case 'dock': return '85%';
-      case 'video': return '95%';
+      case 'dock': return '90%';
       default: return '100%';
     }
   };
