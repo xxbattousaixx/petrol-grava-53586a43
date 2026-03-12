@@ -100,7 +100,6 @@ const SatelliteHero = ({ latitude = 10.4123, longitude = -71.4368, locationName 
     switch (state) {
       case 'idle': return 0.4;
       case 'space': case 'zoom1': case 'zoom2': return 0.3;
-      case 'map': return 0.25;
       case 'zoom4': return 0.45;
       case 'dock': return 0.55;
       case 'complete': return 0.55;
