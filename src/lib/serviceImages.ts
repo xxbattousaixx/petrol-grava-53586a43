@@ -24,7 +24,7 @@ import serviceIzamientos6 from '@/assets/service-izamientos-6.png';
 import serviceIzamientos8 from '@/assets/service-izamientos-8.png';
 import serviceTransporte from '@/assets/service-transporte.jpg';
 import serviceTransporte2 from '@/assets/service-transporte-2.png';
-import serviceTransporte3 from '@/assets/service-transporte-3.png';
+
 import serviceTransporte4 from '@/assets/service-transporte-4.png';
 import serviceSandblasting from '@/assets/service-sandblasting.jpg';
 import serviceSandblasting2 from '@/assets/service-sandblasting-2.png';
