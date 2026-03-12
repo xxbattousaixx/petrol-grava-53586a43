@@ -78,6 +78,17 @@ const AboutPage = () => {
           </div>
         </div>
       </section>
+
+      {/* Video Section */}
+      <section className="relative bg-petrol-green-900 overflow-hidden">
+        <div className="absolute top-0 left-0 right-0 h-24 bg-gradient-to-b from-petrol-green-900 to-transparent z-10 pointer-events-none" />
+        <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-petrol-green-900 to-transparent z-10 pointer-events-none" />
+        <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} transition={{ duration: 0.8 }}>
+          <video autoPlay loop muted playsInline className="w-full h-[50vh] md:h-[70vh] object-cover">
+            <source src="/assets/video-muelle.mp4" type="video/mp4" />
+          </video>
+        </motion.div>
+      </section>
     </div>
   );
 };
