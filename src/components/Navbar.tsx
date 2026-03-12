@@ -31,8 +31,8 @@ const Navbar = () => {
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${scrolled ? 'glass shadow-lg h-16' : 'bg-transparent h-20'}`}>
       <div className="container mx-auto h-full flex items-center justify-between px-4 md:px-6">
         <Link to="/" className="flex items-center group">
-          <motion.div whileHover={{ scale: 1.05 }} transition={{ type: 'spring', stiffness: 400, damping: 10 }}>
-            <img src={logoHeader} alt="Petrol Grava Services C.A Logo" className="h-12 md:h-14 w-auto rounded shadow-md" />
+        <motion.div whileHover={{ scale: 1.05 }} transition={{ type: 'spring', stiffness: 400, damping: 10 }} className="bg-gradient-to-r from-petrol-green-700 via-petrol-green-600 to-petrol-gold-500 rounded shadow-md px-6 py-0.5 flex items-center justify-center">
+            <img src={logoHeader} alt="Petrol Grava Services C.A Logo" className="h-11 md:h-13 w-auto" />
           </motion.div>
         </Link>
 
