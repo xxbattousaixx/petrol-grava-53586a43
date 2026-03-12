@@ -16,7 +16,7 @@ import serviceAlquilerTierra8 from '@/assets/service-alquiler-tierra-8.png';
 import serviceAlquilerTierra9 from '@/assets/service-alquiler-tierra-9.png';
 import serviceIzamientos from '@/assets/service-izamientos.jpg';
 import serviceIzamientos2 from '@/assets/service-izamientos-2.png';
-import serviceIzamientos3 from '@/assets/service-izamientos-3.png';
+
 import serviceIzamientos4 from '@/assets/service-izamientos-4.png';
 import serviceIzamientos5 from '@/assets/service-izamientos-5.png';
 import serviceIzamientos6 from '@/assets/service-izamientos-6.png';
