@@ -18,6 +18,7 @@ const SatelliteHero = ({ latitude = 10.4123, longitude = -71.4368, locationName 
   const [animationState, setAnimationState] = useState('idle');
   const [showContent, setShowContent] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
+  const videoRef = useRef<HTMLVideoElement>(null);
   const hasStarted = useRef(false);
 
   const loadImage = (src: string) => new Promise<void>((resolve) => {
