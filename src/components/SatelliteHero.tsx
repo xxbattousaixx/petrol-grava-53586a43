@@ -132,11 +132,14 @@ const SatelliteHero = ({ latitude = 10.4123, longitude = -71.4368, locationName 
 
   const getProgressWidth = () => {
     switch (animationState) {
-      case 'space': return '15%';
-      case 'zoom1': return '35%';
-      case 'zoom2': return '55%';
-      case 'zoom3': return '72%';
-      case 'zoom4': return '90%';
+      case 'space': return '10%';
+      case 'zoom1': return '25%';
+      case 'zoom2': return '40%';
+      case 'map': return '50%';
+      case 'zoom3': return '62%';
+      case 'zoom4': return '75%';
+      case 'dock': return '85%';
+      case 'video': return '95%';
       default: return '100%';
     }
   };
