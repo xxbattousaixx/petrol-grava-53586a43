@@ -33,7 +33,7 @@ const AboutPage = () => {
         <div className="relative">
           <div className="absolute top-0 left-0 right-0 h-24 bg-gradient-to-b from-petrol-green-900 to-transparent z-10 pointer-events-none" />
           <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-petrol-green-900 to-transparent z-10 pointer-events-none" />
-          <video autoPlay loop muted playsInline className="w-full h-[40vh] md:h-[50vh] object-cover">
+          <video autoPlay loop muted playsInline className="w-full h-[55vh] md:h-[70vh] object-cover">
             <source src="/assets/video-seguridad.mp4" type="video/mp4" />
           </video>
         </div>
