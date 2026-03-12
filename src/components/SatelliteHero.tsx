@@ -4,7 +4,7 @@ import { MapPin, ChevronRight, ArrowRight } from 'lucide-react';
 import { useLanguage } from '@/i18n/LanguageContext';
 import { translations } from '@/i18n/translations';
 
-const ANIMATION_STATES = ['idle', 'space', 'zoom1', 'zoom2', 'map', 'zoom3', 'zoom4', 'dock', 'complete'];
+const ANIMATION_STATES = ['idle', 'space', 'zoom1', 'zoom2', 'map', 'zoom4', 'dock', 'complete'];
 
 interface SatelliteHeroProps {
   latitude?: number;
