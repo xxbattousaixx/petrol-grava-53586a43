@@ -65,7 +65,7 @@ export const serviceImages: Record<string, string> = {
   'service-alquiler-tierra-9': serviceAlquilerTierra9,
   'service-izamientos': serviceIzamientos,
   'service-izamientos-2': serviceIzamientos2,
-  'service-izamientos-3': serviceIzamientos3,
+  
   'service-izamientos-4': serviceIzamientos4,
   'service-izamientos-5': serviceIzamientos5,
   'service-izamientos-6': serviceIzamientos6,
