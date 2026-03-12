@@ -17,6 +17,13 @@ const AboutPage = () => {
   return (
     <div ref={containerRef}>
       <section className="relative py-32 md:py-40 bg-petrol-green-900 text-white overflow-hidden">
+        {/* Background video */}
+        <div className="absolute inset-0">
+          <video autoPlay loop muted playsInline className="w-full h-full object-cover opacity-40">
+            <source src="/assets/video-seguridad.mp4" type="video/mp4" />
+          </video>
+          <div className="absolute inset-0 bg-gradient-to-b from-petrol-green-900/70 via-petrol-green-900/50 to-petrol-green-900/90" />
+        </div>
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-20 left-20 w-40 h-40 border border-white rounded-full" />
           <div className="absolute bottom-20 right-20 w-60 h-60 border border-white rounded-full" />
