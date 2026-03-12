@@ -275,6 +275,7 @@ export const servicesData = [
     shortDesc: { es: "Limpieza industrial con agua a alta presión para embarcaciones y equipos.", en: "Industrial high-pressure water cleaning for vessels and equipment." },
     fullDesc: { es: "Realizamos servicios de limpieza industrial con agua a alta presión para embarcaciones, tanques y equipos industriales. Nuestro servicio garantiza la remoción efectiva de incrustaciones, residuos marinos, óxido y otros contaminantes sin dañar la superficie base. Contamos con equipos de hidrolavado de alta presión operados por personal capacitado que asegura resultados de calidad cumpliendo con todas las normas de seguridad industrial.", en: "We perform industrial high-pressure water cleaning services for vessels, tanks, and industrial equipment. Our service guarantees effective removal of encrustations, marine residue, rust, and other contaminants without damaging the base surface. We have high-pressure hydro-washing equipment operated by trained personnel that ensures quality results complying with all industrial safety standards." },
     image: "service-limpieza",
+    gallery: ["service-limpieza", "service-limpieza-2"],
   },
   {
     id: "reacondicionamiento",
