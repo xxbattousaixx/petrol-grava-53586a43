@@ -26,7 +26,7 @@ const Index = () => {
             {[
               { icon: Clock, value: '+27', label: translations.stats.years },
               { icon: Anchor, value: '76,402', label: translations.stats.land },
-              { icon: Shield, value: '465', label: translations.stats.dock },
+              { icon: Shield, value: '776', label: translations.stats.dock },
               { icon: Award, value: '10', label: translations.stats.services },
             ].map((stat, i) => (
               <motion.div

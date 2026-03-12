@@ -35,8 +35,8 @@ export const translations = {
     areas: {
       title: { es: "Áreas de Estacionamiento de Unidades", en: "Unit Parking Areas" },
       north: {
-        es: "Área Muelle Norte: 465 mts lineales con profundidad de 8 a 12 pies",
-        en: "North Dock Area: 465 linear meters with 8 to 12 feet depth",
+        es: "Área Muelle Norte: 776 mts lineales con profundidad de 8 a 12 pies",
+        en: "North Dock Area: 776 linear meters with 8 to 12 feet depth",
       },
       west: {
         es: "Áreas Abiertas lado Oeste: 296 mts lineales con profundidad de 4 a 8 pies (Especial para desguaces)",
@@ -232,7 +232,7 @@ export const servicesData = [
     slug: "alquiler-espacios-portuarios",
     title: { es: "Espacios Portuarios para Estacionamiento de Unidades Lacustres", en: "Port Space for Lacustrine Unit Parking" },
     shortDesc: { es: "Espacios portuarios con infraestructura completa para el estacionamiento seguro de unidades lacustres.", en: "Port spaces with complete infrastructure for safe lacustrine unit parking." },
-    fullDesc: { es: "Ofrecemos el servicio de espacios portuarios para el estacionamiento de unidades lacustres con la infraestructura necesaria para garantizar la seguridad y comodidad de las embarcaciones. Nuestro muelle norte cuenta con 465 metros lineales con profundidad de 8 a 12 pies, áreas abiertas del lado oeste de 296 metros lineales con profundidad de 4 a 8 pies ideal para desguaces, y áreas del lado este con profundidad de 2 a 4 pies para lanchas y gabarras de poco calado. Contamos con más de 27 años de experiencia ofreciendo este servicio a la industria petrolera y lacustre del Zulia.", en: "We offer port space services for lacustrine unit parking with the necessary infrastructure to guarantee vessel safety and comfort. Our north dock has 465 linear meters with 8 to 12 feet depth, open areas on the west side of 296 linear meters with 4 to 8 feet depth ideal for scrapping, and east side areas with 2 to 4 feet depth for boats and shallow draft barges. We have over 27 years of experience providing this service to the oil and lacustrine industry in Zulia." },
+    fullDesc: { es: "Ofrecemos el servicio de espacios portuarios para el estacionamiento de unidades lacustres con la infraestructura necesaria para garantizar la seguridad y comodidad de las embarcaciones. Nuestro muelle norte cuenta con 776 metros lineales con profundidad de 8 a 12 pies, áreas abiertas del lado oeste de 296 metros lineales con profundidad de 4 a 8 pies ideal para desguaces, y áreas del lado este con profundidad de 2 a 4 pies para lanchas y gabarras de poco calado. Contamos con más de 27 años de experiencia ofreciendo este servicio a la industria petrolera y lacustre del Zulia.", en: "We offer port space services for lacustrine unit parking with the necessary infrastructure to guarantee vessel safety and comfort. Our north dock has 776 linear meters with 8 to 12 feet depth, open areas on the west side of 296 linear meters with 4 to 8 feet depth ideal for scrapping, and east side areas with 2 to 4 feet depth for boats and shallow draft barges. We have over 27 years of experience providing this service to the oil and lacustrine industry in Zulia." },
     image: "service-alquiler-portuario",
   },
   {
