@@ -161,7 +161,7 @@ const SatelliteHero = ({ latitude = 10.4123, longitude = -71.4368, locationName 
             preload="auto"
             style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover' }}
           >
-            <source src="/assets/video-muelle-2.mp4" type="video/mp4" />
+            <source src="/assets/video-muelle-3.mp4" type="video/mp4" />
           </video>
         </div>
         <div className="satellite-overlay" style={{ opacity: getOverlayOpacity(animationState) }} />
