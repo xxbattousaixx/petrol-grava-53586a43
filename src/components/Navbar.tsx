@@ -32,7 +32,7 @@ const Navbar = () => {
       <div className="container mx-auto h-full flex items-center justify-between px-4 md:px-6">
         <Link to="/" className="flex items-center group">
           <motion.div whileHover={{ scale: 1.05 }} transition={{ type: 'spring', stiffness: 400, damping: 10 }}>
-            <img src={logoHeader} alt="Petrol Grava Services C.A Logo" className="h-11 md:h-13 w-auto rounded shadow-md" />
+            <img src={logoHeader} alt="Petrol Grava Services C.A Logo" className="h-11 md:h-13 w-auto rounded shadow-md" style={{ minWidth: '220px' }} />
           </motion.div>
         </Link>
 

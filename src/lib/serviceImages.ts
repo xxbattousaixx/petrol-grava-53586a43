@@ -92,6 +92,7 @@ export const serviceImages: Record<string, string> = {
   'service-sandblasting-9': serviceSandblasting9,
   'service-sandblasting-10': serviceSandblasting10,
   'service-limpieza': serviceLimpieza,
+  'service-limpieza-2': serviceLimpieza2,
   'service-reacondicionamiento': serviceReacondicionamiento,
   'service-lineas-flujo': serviceLineasFlujo,
   'service-lineas-flujo-2': serviceLineasFlujo2,
