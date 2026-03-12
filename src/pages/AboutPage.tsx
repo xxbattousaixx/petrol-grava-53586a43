@@ -16,26 +16,26 @@ const AboutPage = () => {
 
   return (
     <div ref={containerRef}>
-      <section className="relative py-32 md:py-40 bg-petrol-green-900 text-white overflow-hidden">
-        {/* Background video */}
-        <div className="absolute inset-0">
-          <video autoPlay loop muted playsInline className="w-full h-full object-cover opacity-40">
-            <source src="/assets/video-seguridad.mp4" type="video/mp4" />
-          </video>
-          <div className="absolute inset-0 bg-gradient-to-b from-petrol-green-900/70 via-petrol-green-900/50 to-petrol-green-900/90" />
-        </div>
+      <section className="relative bg-petrol-green-900 text-white overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-20 left-20 w-40 h-40 border border-white rounded-full" />
           <div className="absolute bottom-20 right-20 w-60 h-60 border border-white rounded-full" />
           <div className="absolute top-1/2 left-1/2 w-80 h-80 border border-white rounded-full -translate-x-1/2 -translate-y-1/2" />
         </div>
-        <div className="container mx-auto px-4 md:px-6 relative z-10 text-center">
+        <div className="container mx-auto px-4 md:px-6 relative z-10 text-center pt-32 md:pt-40 pb-12">
           <motion.span initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} className="font-mono text-petrol-gold text-xs tracking-[0.3em] mb-4 block">{t(translations.about.label)}</motion.span>
           <div className="overflow-hidden">
             <motion.h1 initial={{ y: '100%' }} animate={{ y: 0 }} transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }} className="font-heading font-bold text-5xl md:text-7xl lg:text-8xl uppercase tracking-tight mb-4">{t(translations.about.title)}</motion.h1>
           </div>
           <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.4, duration: 0.6 }} className="text-xl text-white/80 font-heading uppercase tracking-wider">{t(translations.about.subtitle)}</motion.p>
           <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.5, duration: 0.6 }} className="text-sm text-white/50 mt-4 font-mono">{translations.about.rif}</motion.p>
+        </div>
+        <div className="relative">
+          <div className="absolute top-0 left-0 right-0 h-24 bg-gradient-to-b from-petrol-green-900 to-transparent z-10 pointer-events-none" />
+          <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-petrol-green-900 to-transparent z-10 pointer-events-none" />
+          <video autoPlay loop muted playsInline className="w-full h-[40vh] md:h-[50vh] object-cover">
+            <source src="/assets/video-seguridad.mp4" type="video/mp4" />
+          </video>
         </div>
       </section>
       <section className="py-24 md:py-32 bg-industrial-white">
