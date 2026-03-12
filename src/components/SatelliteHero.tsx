@@ -59,21 +59,13 @@ const SatelliteHero = ({ latitude = 10.4123, longitude = -71.4368, locationName 
       await dockFinalLoaded;
       setAnimationState('dock');
       await new Promise(r => setTimeout(r, 800));
-      // Video as final slide
-      setAnimationState('video');
-      // Play video and wait for it to end or timeout after 8s
+      setAnimationState('complete');
+      setShowContent(true);
+      // Start looping video background
       if (videoRef.current) {
         videoRef.current.currentTime = 0;
         videoRef.current.play().catch(() => {});
       }
-      await new Promise<void>(r => {
-        const timeout = setTimeout(r, 8000);
-        if (videoRef.current) {
-          videoRef.current.onended = () => { clearTimeout(timeout); r(); };
-        }
-      });
-      setAnimationState('complete');
-      setShowContent(true);
       onAnimationComplete?.();
     };
     sequence();
