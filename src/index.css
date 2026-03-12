@@ -262,6 +262,15 @@ html.lenis, html.lenis body {
   opacity: 1;
 }
 
+.satellite-layer.map-zoom {
+  animation: map-zoom-in 4.4s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+@keyframes map-zoom-in {
+  from { transform: scale(1.05); }
+  to { transform: scale(1.45); }
+}
+
 .satellite-overlay {
   position: absolute;
   inset: 0;

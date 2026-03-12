@@ -4,7 +4,7 @@ import { MapPin, ChevronRight, ArrowRight } from 'lucide-react';
 import { useLanguage } from '@/i18n/LanguageContext';
 import { translations } from '@/i18n/translations';
 
-const ANIMATION_STATES = ['idle', 'space', 'zoom1', 'zoom2', 'map', 'zoom3', 'zoom4', 'dock', 'complete'];
+const ANIMATION_STATES = ['idle', 'space', 'zoom1', 'zoom2', 'map', 'zoom4', 'dock', 'complete'];
 
 interface SatelliteHeroProps {
   latitude?: number;
@@ -41,17 +41,12 @@ const SatelliteHero = ({ latitude = 10.4123, longitude = -71.4368, locationName 
       await new Promise(r => setTimeout(r, 1800));
       await maracaiboLoaded;
       setAnimationState('zoom2');
-      // Map slide (4th position)
       const mapLoaded = loadImage('/assets/satellite-lago-map.jpg');
       await new Promise(r => setTimeout(r, 1800));
       await mapLoaded;
       setAnimationState('map');
-      const dockAerialLoaded = loadImage('/assets/satellite-dock-aerial.png');
-      await new Promise(r => setTimeout(r, 2200));
-      await dockAerialLoaded;
-      setAnimationState('zoom3');
       const dockWideLoaded = loadImage('/assets/dock-wide-aerial.jpg');
-      await new Promise(r => setTimeout(r, 1800));
+      await new Promise(r => setTimeout(r, 4400));
       await dockWideLoaded;
       setAnimationState('zoom4');
       const dockFinalLoaded = loadImage('/assets/dock-aerial-view.jpg');
@@ -88,9 +83,8 @@ const SatelliteHero = ({ latitude = 10.4123, longitude = -71.4368, locationName 
       case 'zoom1': return '/assets/satellite-venezuela-region.jpg';
       case 'zoom2': return '/assets/satellite-lake-maracaibo.jpg';
       case 'map': return '/assets/satellite-lago-map.jpg';
-      case 'zoom3': return '/assets/satellite-dock-aerial.png';
       case 'zoom4': return '/assets/dock-wide-aerial.jpg';
-      case 'dock': case 'complete': return '/assets/dock-aerial-view.jpg'; // fallback behind video
+      case 'dock': case 'complete': return '/assets/dock-aerial-view.jpg';
       default: return '/assets/satellite-earth-space.jpg';
     }
   };
@@ -102,7 +96,6 @@ const SatelliteHero = ({ latitude = 10.4123, longitude = -71.4368, locationName 
       case 'zoom1': return 1.25;
       case 'zoom2': return 1.15;
       case 'map': return 1.05;
-      case 'zoom3': return 1.12;
       case 'zoom4': return 1.1;
       case 'dock': case 'complete': return 1.05;
       default: return 1;
@@ -114,7 +107,6 @@ const SatelliteHero = ({ latitude = 10.4123, longitude = -71.4368, locationName 
       case 'idle': return 0.4;
       case 'space': case 'zoom1': case 'zoom2': return 0.3;
       case 'map': return 0.25;
-      case 'zoom3': return 0.35;
       case 'zoom4': return 0.45;
       case 'dock': return 0.55;
       case 'complete': return 0.55;
@@ -126,10 +118,9 @@ const SatelliteHero = ({ latitude = 10.4123, longitude = -71.4368, locationName 
     switch (animationState) {
       case 'space': return '10%';
       case 'zoom1': return '25%';
-      case 'zoom2': return '40%';
-      case 'map': return '50%';
-      case 'zoom3': return '62%';
-      case 'zoom4': return '75%';
+      case 'zoom2': return '45%';
+      case 'map': return '60%';
+      case 'zoom4': return '80%';
       case 'dock': return '90%';
       default: return '100%';
     }
@@ -140,8 +131,9 @@ const SatelliteHero = ({ latitude = 10.4123, longitude = -71.4368, locationName 
       <div className="satellite-layers">
         {ANIMATION_STATES.map((state) => {
           if (state === 'video') return null;
+          const isMapZoom = state === 'map' && animationState === 'map';
           return (
-            <div key={state} className={`satellite-layer ${animationState === state ? 'active' : ''} ${animationState === 'complete' && state === 'dock' ? 'active' : ''}`} style={{ backgroundImage: `url(${getImageForState(state)})`, transform: `scale(${getScaleForState(animationState)})` }} />
+            <div key={state} className={`satellite-layer ${animationState === state ? 'active' : ''} ${animationState === 'complete' && state === 'dock' ? 'active' : ''} ${isMapZoom ? 'map-zoom' : ''}`} style={{ backgroundImage: `url(${getImageForState(state)})`, ...(!isMapZoom ? { transform: `scale(${getScaleForState(animationState)})` } : {}) }} />
           );
         })}
         {/* Video layer - loops as background during complete state */}
