@@ -76,7 +76,7 @@ const SatelliteHero = ({ latitude = 10.4123, longitude = -71.4368, locationName 
   }, [startAnimation]);
 
   const skipAnimation = useCallback(() => {
-    if (videoRef.current) { videoRef.current.pause(); }
+    if (videoRef.current) { videoRef.current.play().catch(() => {}); }
     setAnimationState('complete');
     setShowContent(true);
     hasStarted.current = true;
