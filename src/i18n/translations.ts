@@ -118,7 +118,7 @@ export const translations = {
       es: "Av. Principal La Rosa, al frente de la Iglesia Juan Bautista, Cabimas, Estado Zulia, Venezuela",
       en: "Av. Principal La Rosa, in front of Juan Bautista Church, Cabimas, Zulia State, Venezuela",
     },
-    phoneNumbers: "0412-0709379",
+    phoneNumbers: "+58 412-064-4051",
     emails: ["petrolgravagerencia@gmail.com", "petrolgravaadm@gmail.com"],
     schedule: { es: "Lunes a Viernes: 7:00 AM - 5:00 PM", en: "Monday to Friday: 7:00 AM - 5:00 PM" },
     success: { es: "¡Mensaje Enviado!", en: "Message Sent!" },
@@ -275,6 +275,7 @@ export const servicesData = [
     shortDesc: { es: "Limpieza industrial con agua a alta presión para embarcaciones y equipos.", en: "Industrial high-pressure water cleaning for vessels and equipment." },
     fullDesc: { es: "Realizamos servicios de limpieza industrial con agua a alta presión para embarcaciones, tanques y equipos industriales. Nuestro servicio garantiza la remoción efectiva de incrustaciones, residuos marinos, óxido y otros contaminantes sin dañar la superficie base. Contamos con equipos de hidrolavado de alta presión operados por personal capacitado que asegura resultados de calidad cumpliendo con todas las normas de seguridad industrial.", en: "We perform industrial high-pressure water cleaning services for vessels, tanks, and industrial equipment. Our service guarantees effective removal of encrustations, marine residue, rust, and other contaminants without damaging the base surface. We have high-pressure hydro-washing equipment operated by trained personnel that ensures quality results complying with all industrial safety standards." },
     image: "service-limpieza",
+    gallery: ["service-limpieza", "service-limpieza-2"],
   },
   {
     id: "reacondicionamiento",
