@@ -35,8 +35,8 @@ export const translations = {
     areas: {
       title: { es: "Áreas de Estacionamiento de Unidades", en: "Unit Parking Areas" },
       north: {
-        es: "Área Muelle Norte: 465 mts lineales con profundidad de 8 a 12 pies",
-        en: "North Dock Area: 465 linear meters with 8 to 12 feet depth",
+        es: "Área Muelle Norte: 776 mts lineales con profundidad de 8 a 12 pies",
+        en: "North Dock Area: 776 linear meters with 8 to 12 feet depth",
       },
       west: {
         es: "Áreas Abiertas lado Oeste: 296 mts lineales con profundidad de 4 a 8 pies (Especial para desguaces)",
